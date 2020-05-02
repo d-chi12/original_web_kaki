@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <img src="bb75554c6923d04628c56d016abb3e06.jpg" alt="">
-                    </a>
-                </div>
-                <button class="mobile-menu-icon" onclick="document.querySelector('body').classList.toggle('menu-open');">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <!-- <ul class="nav-list">
-                    <li class="nav-item"><a href="#">Top</a></li>
-                    <li class="nav"></li>
-                </ul> -->
-            </nav>
+    <p class="text-test">hello</p>
+    <header class="header">
+        <nav class="global-nav">
+            <ul class="global_nav__list">
+                <li class="global-nav__item"><a href="">TOP</a></li>
+                <li class="global-nav__item"><a href="">CONCEPT</a></li>
+                <li class="global-nav__item"><a href="">PRODUCT</a></li>
+                <li class="global-nav__item"><a href="">SHOPPING</a></li>
+                <li class="global-nav__item"><a href="">PROFILE</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
         </div>
+        <div class="black-bg" id="js-black-bg"></div>
     </header>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
