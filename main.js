@@ -10,4 +10,4 @@ blackBg.addEventListener('click', function() {
     body.classList.remove('nav-open');
     });
 }
-toggleNav();
+toggleNav(); 
