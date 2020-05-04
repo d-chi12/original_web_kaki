@@ -14,6 +14,7 @@ Colors:
 /*===============================
             Html, body
 ===============================*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i,800|Roboto&display=swap");
 html, body {
   height: 100%;
 }
@@ -24,11 +25,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Condensed', sans-serif;";
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
-  font-family: "MS P明朝";
+  font-family: "Sawarabi Mincho, , sans-serif";
 }
 
 /*===============================
@@ -41,7 +42,7 @@ p {
   width: 300px;
   height: 100vh;
   padding-top: 40px;
-  background-color: #fff;
+  background-color: #DE6A1C;
   -webkit-transition: all .6s;
   transition: all .6s;
   z-index: 200;
@@ -142,6 +143,65 @@ p {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 20px;
+}
+
+/* -------------------------
+hamburger　修正
+// --------------------------
+
+// .hamburger {
+//     & .mobile-menu-icon {
+//         & span {
+//             background-color: white;
+
+//             &:nth-child(1) {
+//                 transition-delay: 70ms;
+//                 transform: translateY(11px) rotate(135deg);
+//             }
+//             &:nth-child(2) {
+//                 transition-delay: 0s;
+//                 transform: translateX(-18px) scaleX(0);
+//             }
+//             &:nth-child(3){
+//                 transition-delay: 140ms;
+//                 transform: translateY(-11px) rotate(-135deg);
+//             }
+//         }
+//     }
+// }
+
+
+/*====================================
+                top
+======================================*/
+.main-message_1 {
+  font-family: "Hannari, sans-serif";
+  font-size: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 30px;
+  color: red;
+}
+
+.main-message_2 {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.img__kaki__1 {
+  width: 150%;
+}
+
+.img__kaki__2 {
+  width: 100%;
+}
+
+.img__kaki__3 {
+  width: 100%;
+}
+
+.img__kaki__4 {
+  width: 100%;
 }
 
 /*===============================
