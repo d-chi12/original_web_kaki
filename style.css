@@ -210,4 +210,15 @@ hamburger　修正
 .img__kaki__4 {
   width: 100%;
 }
+
+/*===============================
+CONCEPT
+===============================*/
+.concept {
+  background-color: #DE6A1C;
+}
+
+.title h1 {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
