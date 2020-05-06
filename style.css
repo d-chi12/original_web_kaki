@@ -245,17 +245,6 @@ PRODUCT
   background-size: cover;
 }
 
-.sec__inner {
-  position: relative;
-  height: 100px;
-  border: solid 1px black;
-}
-
-.sec__title {
-  position: absolute;
-  bottom: 0;
-}
-
 /*===============================
     ABOUT KAKI
     =================================*/
