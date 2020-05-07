@@ -177,11 +177,11 @@ hamburger　修正
 /*====================================
                 top
 ======================================*/
-.all {
+.sec {
   width: 100%;
   height: 100%;
 }
-
+/* 
 .main-message_1 h1 {
   font-family: "Hannari, sans-serif";
   font-size: 30px;
@@ -194,9 +194,9 @@ hamburger　修正
 .main-message_2 p {
   font-size: 20px;
   padding-left: 30px;
-}
+} */
 
-.img__kaki__1 {
+/* .img__kaki__1 {
   width: 150%;
 }
 
@@ -208,39 +208,34 @@ hamburger　修正
   width: 100%;
 }
 
-.img__kaki__4 {
-  width: 100%;
-}
+.img__kaki__4 { */
+  /* width: 100%;
+} */
 
 /*===============================
 CONCEPT
 ===============================*/
 .concept {
   background-color: #de6a1c;
+  overflow:hidden;
 }
 
-.main-concept {
-  margin-top: 100px;
+.con__inner {
+  position: relative;
 }
 
-.title {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.con__ttl {
   font-size: 80px;
+  position: absolute;
+  top: 50px;
 }
 
-.sec_txt {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.con_txt {
   font-size: 20px;
-  margin-top: 100px;
+  position: absolute;
+  top: 250px;
 }
 
-h2 {
-  display: block;
-}
 
 /*===============================
 PRODUCT
@@ -248,23 +243,25 @@ PRODUCT
 .product {
   background: url("kaki/kaki7.jpg");
   background-size: cover;
+  overflow:hidden;
 }
 
-.box {
+.prd__inner {
   width: auto;
   position: relative;
 }
 
-.sec__ttl {
+.prd__ttl {
   font-size: 80px;
   position: absolute;
   top: 550px;
 }
 
-.sec__ttl2 {
+.prd__txt {
   position: relative;
   top: 150px;
-  left: 650px;
+  left: 800px;
+  font-size: 20px;
 }
 
 /*===============================
@@ -273,22 +270,71 @@ PRODUCT
 .about {
   background: url(kaki/kaki8.jpg);
   background-size: cover;
+  overflow:hidden;
 }
 
-.box2 {
+.abu__inner {
   width: auto;
   position: relative;
 }
 
-.about__ttl {
+.abu__ttl {
   font-size: 80px;
   position: absolute;
   top: 100px;
   left: 800px;
 }
 
-.about__ttl2 {
-  position: relative;
+.abu__txt {
+  position: absolute;
   top: 500px;
+  font-size: 20px;
 }
+
+/*=========================
+      shopping
+===========================*/
+.shopping {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  overflow:hidden;
+}
+
+.sec__inner {
+  padding: 0;
+}
+
+.shop__cassete {
+  max-width: 700px;
+  /* text-align: center; */
+  position: relative;
+}
+
+.shop__ttl {
+  font-size: 80px;
+  margin-top: 50px;
+  color: #000;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 200px;
+}
+
+.shop__cnt02 {
+  text-align: center;
+  position: relative;
+}
+
+.shop__cassete2 p {
+  color: #000;
+  position: absolute;
+  top: 100px;
+}
+
+
 /*# sourceMappingURL=style.css.map */
