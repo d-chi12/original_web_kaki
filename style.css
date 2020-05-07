@@ -302,7 +302,8 @@ PRODUCT
 }
 
 .sec__inner {
-  padding: 0;
+  block-size: ;
+
 }
 
 .shop__cassete {
