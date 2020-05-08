@@ -45,7 +45,7 @@ p {
   width: 300px;
   height: 100vh;
   padding-top: 40px;
-  background-color: #de6a1c;
+  background-color: #49B705;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   z-index: 200;
@@ -133,7 +133,7 @@ p {
 
 .nav-open .hamberger__line--1 {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 20px;
 }
 
@@ -144,7 +144,7 @@ p {
 
 .nav-open .hamburger__line--1 {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 20px;
 }
 
@@ -177,16 +177,17 @@ hamburger　修正
 /*====================================
                 top
 ======================================*/
-.all {
+.sec {
   width: 100%;
   height: 100%;
+  overflow:hidden;
 }
-
+/* 
 .main-message_1 h1 {
   font-family: "Hannari, sans-serif";
   font-size: 30px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-left: 30px;
   color: red;
 }
@@ -194,9 +195,9 @@ hamburger　修正
 .main-message_2 p {
   font-size: 20px;
   padding-left: 30px;
-}
+} */
 
-.img__kaki__1 {
+/* .img__kaki__1 {
   width: 150%;
 }
 
@@ -208,9 +209,9 @@ hamburger　修正
   width: 100%;
 }
 
-.img__kaki__4 {
-  width: 100%;
-}
+.img__kaki__4 { */
+  /* width: 100%;
+} */
 
 /*===============================
 CONCEPT
@@ -219,24 +220,22 @@ CONCEPT
   background-color: #de6a1c;
 }
 
-.main-concept {
-  margin-top: 100px;
+.con__inner {
+  position: relative;
 }
 
-.title {
-  align-items: center;
+.con__ttl {
   font-size: 80px;
+  position: absolute;
+  top: 50px;
 }
 
-.sec_txt {
-  align-items: flex-end;
+.con_txt {
   font-size: 20px;
-  margin-top: 100px;
+  position: absolute;
+  top: 250px;
 }
 
-h2 {
-  display: block;
-}
 
 /*===============================
 PRODUCT
@@ -244,27 +243,26 @@ PRODUCT
 .product {
   background: url("kaki/kaki7.jpg");
   background-size: cover;
+  overflow:hidden;
 }
 
-.box {
+.prd__inner {
   width: auto;
   position: relative;
 }
 
-.sec__ttl {
+.prd__ttl {
   font-size: 80px;
   position: absolute;
   top: 550px;
 }
 
-.sec__ttl2 {
+.prd__txt {
   position: relative;
   top: 150px;
-  left: 650px;
+  left: 800px;
+  font-size: 20px;
 }
-
-
-
 
 /*===============================
     ABOUT KAKI
@@ -274,21 +272,141 @@ PRODUCT
   background-size: cover;
 }
 
-.box2 {
+.abu__inner {
   width: auto;
+  height: auto;
   position: relative;
-}
+} 
 
-.about__ttl {
+.abu__ttl {
   font-size: 80px;
   position: absolute;
   top: 100px;
   left: 800px;
 }
 
-.about__ttl2 {
-  position: relative;
+.abu__txt {
+  position: absolute;
   top: 500px;
+  font-size: 20px;
+} 
+
+/*=========================
+      shopping
+===========================*/
+.shopping {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  overflow:hidden;
 }
+
+/* .shop__inner {
+  block-size: ; */
+
+
+.shop__cassete {
+  max-width: 700px;
+  /* text-align: center; */
+  position: relative;
+}
+
+.shop__ttl {
+  font-size: 80px;
+  margin-top: 50px;
+  color: #000;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 200px;
+}
+
+.shop__cnt02 {
+  text-align: center;
+  position: relative;
+  top: 250px;
+  left: 100px;
+
+}
+
+.shop__cassete2 p {
+  color: #000;
+  max-width: 500px;
+  text-align: center;
+}
+
+.kaki__name {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.kaki__txt {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/*=======================
+        Profile
+=========================*/
+.profile {
+  background-color: #de6a1c;
+}
+
+.prf__ttl {
+  font-size: 80px;
+  margin-top: 50px;
+}
+
+.prf__name {
+  font-size: 30px;
+  margin: 50px 0;
+}
+
+.prf__txt {
+  font-size: 20px;
+  max-width: 500px;
+  padding: auto;
+}
+
+/*======================
+        gallery
+========================*/
+// .gal__cnt {
+//   width: 50vw;
+//   height: 50vh;
+// }
+
+.gal__img-01 {
+  width: 50vw;
+  height: 50vh;
+  background-image: url(kaki/kaki9.jpg);
+  background-size: cover;
+}
+
+.gal__img-02 {
+  width: 50vw;
+  height: 50vh;
+  background-image: url(kaki/family.jpg);
+  background-size: cover;
+}
+
+.gal__img-03 {
+  width: 50vw;
+  height: 50vh;
+  background-image: url(kaki/child.jpg);
+  background-size: cover;
+}
+
+.gal__img-04 {
+  width: 50vw;
+  height: 50vh;
+  background-image: url(kaki/kaki10.jpg);
+  background-size: cover;
+}
+
 
 /*# sourceMappingURL=style.css.map */

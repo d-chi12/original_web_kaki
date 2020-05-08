@@ -180,8 +180,9 @@ hamburger　修正
 .sec {
   width: 100%;
   height: 100%;
-  overflow:hidden;
+  overflow: hidden;
 }
+
 /* 
 .main-message_1 h1 {
   font-family: "Hannari, sans-serif";
@@ -196,7 +197,6 @@ hamburger　修正
   font-size: 20px;
   padding-left: 30px;
 } */
-
 /* .img__kaki__1 {
   width: 150%;
 }
@@ -210,9 +210,8 @@ hamburger　修正
 }
 
 .img__kaki__4 { */
-  /* width: 100%;
+/* width: 100%;
 } */
-
 /*===============================
 CONCEPT
 ===============================*/
@@ -236,14 +235,13 @@ CONCEPT
   top: 250px;
 }
 
-
 /*===============================
 PRODUCT
 ===============================*/
 .product {
   background: url("kaki/kaki7.jpg");
   background-size: cover;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .prd__inner {
@@ -276,7 +274,7 @@ PRODUCT
   width: auto;
   height: auto;
   position: relative;
-} 
+}
 
 .abu__ttl {
   font-size: 80px;
@@ -289,7 +287,7 @@ PRODUCT
   position: absolute;
   top: 500px;
   font-size: 20px;
-} 
+}
 
 /*=========================
       shopping
@@ -298,13 +296,11 @@ PRODUCT
   max-width: 1500px;
   margin: 0 auto;
   background-color: #f4f4f4;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 /* .shop__inner {
   block-size: ; */
-
-
 .shop__cassete {
   max-width: 700px;
   /* text-align: center; */
@@ -315,7 +311,6 @@ PRODUCT
   font-size: 80px;
   margin-top: 50px;
   color: #000;
-
 }
 
 img {
@@ -330,7 +325,6 @@ img {
   position: relative;
   top: 250px;
   left: 100px;
-
 }
 
 .shop__cassete2 p {
@@ -372,5 +366,34 @@ img {
   padding: auto;
 }
 
+/*======================
+        gallery
+========================*/
+.gal__img-01 {
+  width: 50vw;
+  height: 50vh;
+  background-image: url(kaki/kaki9.jpg);
+  background-size: cover;
+}
 
+.gal__img-02 {
+  width: 50vw;
+  height: 50vh;
+  background-image: url(kaki/family.jpg);
+  background-size: cover;
+}
+
+.gal__img-03 {
+  width: 50vw;
+  height: 50vh;
+  background-image: url(kaki/child.jpg);
+  background-size: cover;
+}
+
+.gal__img-04 {
+  width: 50vw;
+  height: 50vh;
+  background-image: url(kaki/kaki10.jpg);
+  background-size: cover;
+}
 /*# sourceMappingURL=style.css.map */
