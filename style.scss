@@ -298,7 +298,6 @@ PRODUCT
   max-width: 1500px;
   margin: 0 auto;
   background-color: #f4f4f4;
-  overflow:hidden;
 }
 
 /* .shop__inner {
@@ -318,8 +317,8 @@ PRODUCT
 
 }
 
-img {
-  max-width: 100%;
+.shop__img {
+  width: 100%;
   height: auto;
   position: absolute;
   top: 200px;
@@ -372,6 +371,12 @@ img {
   padding: auto;
 }
 
+.prf__img {
+  max-width: 100%;
+  margin-top: 200px;
+}
+
+
 /*======================
         gallery
 ========================*/
@@ -408,5 +413,39 @@ img {
   background-size: cover;
 }
 
+/*=====================
+        FOOTER
+=======================*/
+.footer__sec {
+  position: relative;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.logo {
+  height:　150px;
+  width: 150px;
+  margin: 100px auto;
+  display: block;
+}
+
+.fot__illust1 {
+  height: 200px;
+  width: 250px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.fot__illust2 {
+  height: 200px;
+  width: 250px;
+  position: absolute;
+  top: 50px;
+  left: 450px;
+}
 
 /*# sourceMappingURL=style.css.map */
