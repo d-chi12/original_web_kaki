@@ -17,7 +17,7 @@ Colors:
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i,800|Roboto&display=swap");
 html,
 body {
-  height: 100%;
+  // height: 100%;
 }
 
 h1,
@@ -33,6 +33,8 @@ h6 {
 p {
   color: white;
   font-family: "Sawarabi Mincho, , sans-serif";
+  margin: 0;
+  padding: 0;
 }
 
 /*===============================
@@ -180,7 +182,6 @@ hamburger　修正
 .sec {
   width: 100%;
   height: 100%;
-  overflow:hidden;
 }
 /* 
 .main-message_1 h1 {
@@ -221,19 +222,19 @@ CONCEPT
 }
 
 .con__inner {
-  position: relative;
 }
 
 .con__ttl {
   font-size: 80px;
-  position: absolute;
-  top: 50px;
+  margin-top: 120px;
 }
 
 .con_txt {
   font-size: 20px;
-  position: absolute;
-  top: 250px;
+  margin: 120px 0;
+  &__p {
+    margin-bottom: 9px;
+  }
 }
 
 
@@ -243,25 +244,25 @@ PRODUCT
 .product {
   background: url("kaki/kaki7.jpg");
   background-size: cover;
-  overflow:hidden;
+  &_bg {
+    background-color: rgba(0,0,0,0.3);
+  }
+
 }
 
-.prd__inner {
-  width: auto;
-  position: relative;
-}
 
 .prd__ttl {
   font-size: 80px;
-  position: absolute;
-  top: 550px;
+  margin-top: 500px;
+  margin-bottom: 120px;
 }
 
-.prd__txt {
-  position: relative;
-  top: 150px;
-  left: 800px;
+.prd_txt {
   font-size: 20px;
+  padding: 150px;
+  &__p {
+    margin-bottom: 10px;
+  }
 }
 
 /*===============================
@@ -270,83 +271,62 @@ PRODUCT
 .about {
   background: url(kaki/kaki8.jpg);
   background-size: cover;
+  &_bg { background-color: rgba(0,0,0,0.3);}
 }
-
-.abu__inner {
-  width: auto;
-  height: auto;
-  position: relative;
-} 
-
-.abu__ttl {
-  font-size: 80px;
-  position: absolute;
-  top: 100px;
-  left: 800px;
-}
-
-.abu__txt {
-  position: absolute;
-  top: 500px;
+.abu_txt {
   font-size: 20px;
+  margin-top: 450px;
+  margin-bottom: 120px;
+  &__p { margin-bottom: 10px; }
 } 
+
+.abu_ttl {
+  font-size: 80px;
+  padding: 150px;
+  // margin-bottom: 120px;
+
+}
+
 
 /*=========================
       shopping
 ===========================*/
-.shopping {
-  max-width: 1500px;
-  margin: 0 auto;
-  background-color: #f4f4f4;
-}
+.shopping { background-color: #f4f4f4; }
 
-/* .shop__inner {
-  block-size: ; */
-
-
-.shop__cassete {
-  max-width: 700px;
-  /* text-align: center; */
-  position: relative;
-}
-
-.shop__ttl {
+.shop_ttl {
   font-size: 80px;
-  margin-top: 50px;
+  padding-top: 70px;
   color: #000;
 
 }
 
-.shop__img {
+.shop_img {
   width: 100%;
-  height: auto;
-  position: absolute;
-  top: 200px;
+  padding-top: 50px;
+  padding-bottom: 130px;
 }
 
-.shop__cnt02 {
+.shop_txt {
+  padding-top: 220px;
   text-align: center;
-  position: relative;
-  top: 250px;
-  left: 100px;
-
+  &__name {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  &__intro{
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 10px;  
+  }
+  &__price {
+    color: #000;
+    font-size: 20px;
+    padding: 30px;
+  }
 }
 
-.shop__cassete2 p {
-  color: #000;
-  max-width: 500px;
-  text-align: center;
-}
-
-.kaki__name {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.kaki__txt {
-  font-size: 15px;
-  margin-top: 10px;
-}
+.shop_btn { padding-top: 30px; }
 
 /*=======================
         Profile
@@ -357,7 +337,7 @@ PRODUCT
 
 .prf__ttl {
   font-size: 80px;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .prf__name {
@@ -367,13 +347,12 @@ PRODUCT
 
 .prf__txt {
   font-size: 20px;
-  max-width: 500px;
-  padding: auto;
+  margin-bottom: 5px;
 }
 
 .prf__img {
-  max-width: 100%;
-  margin-top: 200px;
+  width: 100%;
+  padding: 175px 0;
 }
 
 
