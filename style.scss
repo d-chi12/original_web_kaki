@@ -17,7 +17,7 @@ Colors:
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i,800|Roboto&display=swap");
 html,
 body {
-  // height: 100%;
+
 }
 
 h1,
@@ -28,6 +28,8 @@ h5,
 h6 {
   color: white;
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -37,203 +39,144 @@ p {
   padding: 0;
 }
 
-/*===============================
-            Navber
-===============================*/
-.global-nav {
-  position: fixed;
-  right: -320px;
-  top: 0;
-  width: 300px;
-  height: 100vh;
-  padding-top: 40px;
-  background-color: #49B705;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
-  z-index: 200;
-  overflow-y: auto;
-}
-
-.hamburger {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 300;
-}
-
-.global-nav__list {
-  margin: 0;
-  padding: 0;
+ul {
   list-style: none;
 }
 
-.global-nav__item {
-  text-align: center;
-  padding: 0 14px;
+.sec {
+  width: 100%;
+  height: 100%;
 }
 
-.global-nav__item a {
-  display: block;
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
-  text-decoration: none;
-  color: #111;
+/*===============================
+            Navber
+===============================*/
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: #f4f4f4;
+}
+.containner {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-.global-nav__item a:hover {
-  background-color: #eee;
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1px solid rgba(255, 255, 255, .2);
+} 
+
+.inner_logo {
+  width: 100%;
 }
 
-.hamburger__line {
-  position: absolute;
-  left: 11px;
-  width: 18px;
-  height: 1px;
-  background-color: #111;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+.nav-brand {
+  width: 2rem;
 }
 
-.hamburger__line--1 {
-  top: 14px;
-}
-
-.hamburger__line--2 {
-  top: 20px;
-}
-
-.hamburger__line--3 {
-  top: 26px;
-}
-
-.black-bg {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 100;
-  background-color: #000;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+.menu-icons i {
+  font-size: 3.5rem;
+  color: #000;
   cursor: pointer;
 }
 
-.nav-open .global-nav {
+.close i {
+  color: #DE6A1C;
+}
+
+.nav-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+  transition: all 650ms ease-in-out;
+}
+
+.nav-list.active {
   right: 0;
 }
 
-.nav-open .black-bg {
-  opacity: 0.8;
-  visibility: visible;
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
 }
 
-.nav-open .hamberger__line--1 {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 20px;
+.nav-item {
+  margin: 1.5rem 0;
 }
 
-.nav-open .hamburger__line--1 {
-  width: 0;
-  left: 50%;
+.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: rgba(0,0,0, .7);
 }
 
-.nav-open .hamburger__line--1 {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 20px;
-}
-
-/* -------------------------
-hamburger　修正
-// --------------------------
-
-// .hamburger {
-//     & .mobile-menu-icon {
-//         & span {
-//             background-color: white;
-
-//             &:nth-child(1) {
-//                 transition-delay: 70ms;
-//                 transform: translateY(11px) rotate(135deg);
-//             }
-//             &:nth-child(2) {
-//                 transition-delay: 0s;
-//                 transform: translateX(-18px) scaleX(0);
-//             }
-//             &:nth-child(3){
-//                 transition-delay: 140ms;
-//                 transform: translateY(-11px) rotate(-135deg);
-//             }
-//         }
-//     }
-// }
 
 
 /*====================================
                 top
 ======================================*/
-.sec {
+.swiper-container {
   width: 100%;
-  height: 100%;
-}
-/* 
-.main-message_1 h1 {
-  font-family: "Hannari, sans-serif";
-  font-size: 30px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-left: 30px;
-  color: red;
+  height: 700px;
 }
 
-.main-message_2 p {
-  font-size: 20px;
-  padding-left: 30px;
-} */
-
-/* .img__kaki__1 {
-  width: 150%;
+.hed_img__1 {
+  background-image: url(kaki/kaki1.jpg);
+  background-size: cover;
 }
 
-.img__kaki__2 {
-  width: 100%;
+.hed_img__2 {
+  background-image: url(kaki/kaki2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.img__kaki__3 {
-  width: 100%;
+.hero {
+  &__title {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    color: white;
+  }
 }
 
-.img__kaki__4 { */
-  /* width: 100%;
-} */
+
+
+
+
 
 /*===============================
 CONCEPT
 ===============================*/
 .concept {
-  background-color: #de6a1c;
-}
-
-.con__inner {
+  background-color: #fff;
 }
 
 .con__ttl {
   font-size: 80px;
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .con_txt {
   font-size: 20px;
-  margin: 120px 0;
+  padding-bottom: 150px;
+  margin-top: 50px;
   &__p {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
 }
 
@@ -242,50 +185,55 @@ CONCEPT
 PRODUCT
 ===============================*/
 .product {
-  background: url("kaki/kaki7.jpg");
-  background-size: cover;
-  &_bg {
-    background-color: rgba(0,0,0,0.3);
+
+}
+.prd_inner__img {
+  width: 100%;
+  padding: 200px 0;
+}
+
+.prd_inner {
+
+  padding: 150px 50px;
+
+  &__ttl {
+    font-size: 40px;
+    padding: 50px  0;
   }
-
-}
-
-
-.prd__ttl {
-  font-size: 80px;
-  margin-top: 500px;
-  margin-bottom: 120px;
-}
-
-.prd_txt {
-  font-size: 20px;
-  padding: 150px;
-  &__p {
-    margin-bottom: 10px;
+  
+  &__txt {
+    font-size: 20px;
+    // padding-top: px;
+    margin-bottom: 15px;
   }
 }
+
 
 /*===============================
     ABOUT KAKI
     =================================*/
-.about {
-  background: url(kaki/kaki8.jpg);
-  background-size: cover;
-  &_bg { background-color: rgba(0,0,0,0.3);}
+.abu_inner__img {
+  width: 80%;
+  padding-bottom: 150px;
 }
-.abu_txt {
+
+.abu_inner__img2 {
+  width: 80%;
+  padding: 50px 0;
+
+}
+
+.abu_inner__ttl {
+  font-size: 50px;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.abu_inner__txt {
   font-size: 20px;
-  margin-top: 450px;
-  margin-bottom: 120px;
-  &__p { margin-bottom: 10px; }
+  margin-bottom: 10px;
 } 
 
-.abu_ttl {
-  font-size: 80px;
-  padding: 150px;
-  // margin-bottom: 120px;
-
-}
 
 
 /*=========================
@@ -293,36 +241,28 @@ PRODUCT
 ===========================*/
 .shopping { background-color: #f4f4f4; }
 
-.shop_ttl {
-  font-size: 80px;
-  padding-top: 70px;
-  color: #000;
-
-}
-
-.shop_img {
+.shop_inner__img {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 130px;
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
 
-.shop_txt {
-  padding-top: 220px;
+
+.shop_inner {
   text-align: center;
-  &__name {
+  &__ttl {
+    font-size: 50px;
+    padding: 180px 50px 50px 50px;
     color: #000;
-    font-size: 30px;
-    margin-bottom: 30px;
   }
-  &__intro{
+  &__txt {
     color: #000;
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 10px;  
   }
-  &__price {
-    color: #000;
+  &__txtz {
     font-size: 20px;
-    padding: 30px;
+    padding: 20px 0;
   }
 }
 
@@ -332,19 +272,13 @@ PRODUCT
         Profile
 =========================*/
 .profile {
-  background-color: #de6a1c;
+  background-color: white;
 }
 
 .prf__ttl {
-  font-size: 80px;
-  padding-top: 50px;
+  font-size: 50px;
+  padding: 150px 0 50px 0;
 }
-
-.prf__name {
-  font-size: 30px;
-  margin: 50px 0;
-}
-
 .prf__txt {
   font-size: 20px;
   margin-bottom: 5px;
@@ -364,39 +298,38 @@ PRODUCT
 //   height: 50vh;
 // }
 
-.gal__img-01 {
-  width: 50vw;
-  height: 50vh;
-  background-image: url(kaki/kaki9.jpg);
-  background-size: cover;
-}
+// .gal__img-01 {
+//   width: 50vw;
+//   height: 50vh;
+//   background-image: url(kaki/kaki9.jpg);
+//   background-size: cover;
+// }
 
-.gal__img-02 {
-  width: 50vw;
-  height: 50vh;
-  background-image: url(kaki/family.jpg);
-  background-size: cover;
-}
+// .gal__img-02 {
+//   width: 50vw;
+//   height: 50vh;
+//   background-image: url(kaki/family.jpg);
+//   background-size: cover;
+// }
 
-.gal__img-03 {
-  width: 50vw;
-  height: 50vh;
-  background-image: url(kaki/child.jpg);
-  background-size: cover;
-}
+// .gal__img-03 {
+//   width: 50vw;
+//   height: 50vh;
+//   background-image: url(kaki/child.jpg);
+//   background-size: cover;
+// }
 
-.gal__img-04 {
-  width: 50vw;
-  height: 50vh;
-  background-image: url(kaki/kaki10.jpg);
-  background-size: cover;
-}
+// .gal__img-04 {
+//   width: 50vw;
+//   height: 50vh;
+//   background-image: url(kaki/kaki10.jpg);
+//   background-size: cover;
+// }
 
 /*=====================
         FOOTER
 =======================*/
 .footer__sec {
-  position: relative;
 }
 
 .footer {
@@ -414,7 +347,6 @@ PRODUCT
 .fot__illust1 {
   height: 200px;
   width: 250px;
-  position: absolute;
   top: 50px;
   left: 50px;
 }
