@@ -142,37 +142,45 @@ nav {
     height: 700px;
   }
   &_title {
+    position: absolute;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    // transform: translate(-50%, calc(-50% + 20%));
+    // z-index: 1;
+    // opacity: 0;
+    // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
+    
     &__first {
-      position: absolute;
-      writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
       top: 20%;
       left: 80%;
-      transform: translate(-50%, -50%);
+      transform: translate(-20%, calc(-20% + 20%));
+      z-index: 1;
+      opacity: 2;
+      transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
     &__second {
-      position: absolute;
-      writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
       top: 35%;
       left: 75%;
-      transform: translate(-50%, -50%);
+      transform: translate(-20%, calc(-20% + 20%));
+      z-index: 1;
+      opacity: 2;
+      transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
     &__third {
-      position: absolute;
-      writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
       top: 30%;
       left: 20%;
-      transform: translate(-50%, -50%);
+      transform: translate(-20%, calc(-20% + 20%));
+      z-index: 1;
+      opacity: 2;
+      transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
     &__fourth {
-      position: absolute;
-      writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
       top: 55%;
       left: 15%;
-      transform: translate(-50%, -50%);
+      transform: translate(-20%, calc(-20% + 20%));
+      z-index: 1;
+      opacity: 2;
+      transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
   }
 
@@ -192,7 +200,7 @@ nav {
     left: 0;
     bottom: 0;
     width: 6px;
-    @include animation($name: kf-arrow-anime, $iteration: infinite, $duration: 2s, $timing-function: linear)
+    // @include animation($name: kf-arrow-anime, $iteration: infinite, $duration: 2s, $timing-function: linear)
   }
 
   &__scrolltext {
@@ -202,32 +210,46 @@ nav {
     left: -8px;
     top: 11px;
     font-size: 1.2em;
-
   }
-
 }
 
-.hed_img__1 {
-  background-image: url(kaki/kaki1.jpg);
-  background-size: cover;
-}
-
-.hed_img__2 {
-  background-image: url(kaki/kaki2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-@keyframes kf-arrow-anime {
-  0%,
-  50%,
-  100% {
-    transform: translateY(-10%);
+.swiper-slide-active {
+  & .swiper_title {
+    opacity: 1;
+    transform: translate(-50%, -50%);
   }
-  30% {
+  & .hed_img {
     transform: none;
   }
 }
+
+.swiper-slide {
+  overflow: hidden;
+}
+.hed_img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: transform 1.9s ease;
+}
+
+
+
+
+
+// @keyframes kf-arrow-anime {
+//   0%,
+//   50%,
+//   100% {
+//     transform: translateY(-10%);
+//   }
+//   30% {
+//     transform: none;
+//   }
+// }
 
 
 /*===============================
