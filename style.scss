@@ -141,46 +141,44 @@ nav {
     width: 100%;
     height: 700px;
   }
+
   &_title {
     position: absolute;
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
-    // transform: translate(-50%, calc(-50% + 20%));
-    // z-index: 1;
-    // opacity: 0;
-    // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     
     &__first {
       top: 20%;
       left: 80%;
-      transform: translate(-20%, calc(-20% + 20%));
-      z-index: 1;
-      opacity: 2;
-      transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
+      // color: #000;
+      // transform: translate(-20%, calc(-20% + 20%));
+      // z-index: 1;
+      // opacity: 2;
+      // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
     &__second {
       top: 35%;
       left: 75%;
-      transform: translate(-35%, calc(-35% + 20%));
-      z-index: 1;
-      opacity: 2;
-      transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
+      // transform: translate(-35%, calc(-35% + 20%));
+      // z-index: 1;
+      // opacity: 2;
+      // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
     &__third {
       top: 30%;
       left: 20%;
-      transform: translate(-30%, calc(-30% + 20%));
-      z-index: 1;
-      opacity: 2;
-      transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
+      // transform: translate(-30%, calc(-30% + 20%));
+      // z-index: 1;
+      // opacity: 2;
+      // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
     &__fourth {
       top: 55%;
       left: 15%;
-      transform: translate(-55%, calc(-20% + 20%));
-      z-index: 1;
-      opacity: 2;
-      transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
+      // transform: translate(-55%, calc(-20% + 20%));
+      // z-index: 1;
+      // opacity: 2;
+      // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
   }
 
@@ -200,7 +198,7 @@ nav {
     left: 0;
     bottom: 0;
     width: 6px;
-    @include animation($name: kf-arrow-anime, $iteration: infinite, $duration: 2s, $timing-function: linear)
+  //   @include animation($name: kf-arrow-anime, $iteration: infinite, $duration: 2s, $timing-function: linear)
   }
 
   &__scrolltext {
@@ -214,10 +212,10 @@ nav {
 }
 
 .swiper-slide-active {
-  & .swiper_title {
-    opacity: 1;
-    transform: translate(-20%, -20%);
-  }
+  // & .swiper_title {
+  //   opacity: 1;
+  //   transform: translate(-20%, -20%);
+  // }
   & .hed_img {
     transform: none;
   }
@@ -240,36 +238,47 @@ nav {
 
 
 
-@keyframes kf-arrow-anime {
-  0%,
-  50%,
-  100% {
-    transform: translateY(-10%);
-  }
-  30% {
-    transform: none;
-  }
-}
+// @keyframes kf-arrow-anime {
+//   0%,
+//   50%,
+//   100% {
+//     transform: translateY(-10%);
+//   }
+//   30% {
+//     transform: none;
+//   }
+// }
 
 
 /*===============================
 CONCEPT
 ===============================*/
-.concept {
-  background-color: #fff;
+.concept {background-color: #fff;}
+
+.fadeInLeft {
+  animation-duration: 0.8s;
+  animation-delay: 0s;
 }
 
 .con__ttl {
-  font-size: 80px;
+  color: #000;
+  font-size: 50px;
   margin-top: 150px;
+  text-align: center;
 }
 
 .con_txt {
-  font-size: 20px;
+  text-align: center;
+  font-size: 15px;
   padding-bottom: 150px;
-  margin-top: 50px;
+  padding-top: 100px;
   &__p {
     margin-bottom: 10px;
+    color: #000;
+  }
+  &__pz {
+    margin-top: 30px;
+    color: #000;
   }
 }
 

@@ -1,17 +1,3 @@
-// function toggleNav() {
-//     var body = document.body;
-//     var hamburger = document.getElementById('js-hamburger');
-//     var blackBg = document.getElementById('js-black-bg');
-
-//     hamburger.addEventListener('click', function() {
-//     body.classList.toggle('nav-open');
-// });
-// blackBg.addEventListener('click', function() {
-//     body.classList.remove('nav-open');
-//     });
-// }
-// toggleNav(); 
-
 // header //
 const selectElement = (s) => document.querySelector(s);
 
@@ -29,30 +15,6 @@ selectElement('.close').addEventListener('click', () => {
 
 
 // top //
-// document.addEventListener('DOMContentLoaded', function(){
-//     const hero = new HeroSlider();
-// });
-
-// class HeroSlider {
-//     constructor() {
-//         this.swiper = new Swiper ('.swiper-container', {
-//             // Optional parameters
-//             // direction: 'vertical',
-//             loop: true,
-//             grabCursor: true,
-//             effect: 'coverflow',
-//             centeredSlides: true,
-//             slidesPerViwe: 1,
-//             speed: 1000,
-//             autoplay: {
-//                 delay: 4000,
-//                 disableOnInteraction: false
-//             }
-//         })
-//     }
-// }
-
-
 document.addEventListener('DOMContentLoaded', function(){
     const hero = new HeroSlider('.swiper-container');
     hero.start();
@@ -92,4 +54,8 @@ class HeroSlider {
     }
 }
 
-// top //
+// end of top //
+
+// consept //
+    
+// end of concept  //
