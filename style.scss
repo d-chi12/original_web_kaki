@@ -150,35 +150,19 @@ nav {
     &__first {
       top: 20%;
       left: 80%;
-      // color: #000;
-      // transform: translate(-20%, calc(-20% + 20%));
-      // z-index: 1;
-      // opacity: 2;
-      // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
     &__second {
       top: 35%;
       left: 75%;
-      // transform: translate(-35%, calc(-35% + 20%));
-      // z-index: 1;
-      // opacity: 2;
-      // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
+      
     }
     &__third {
       top: 30%;
       left: 20%;
-      // transform: translate(-30%, calc(-30% + 20%));
-      // z-index: 1;
-      // opacity: 2;
-      // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
     &__fourth {
       top: 55%;
       left: 15%;
-      // transform: translate(-55%, calc(-20% + 20%));
-      // z-index: 1;
-      // opacity: 2;
-      // transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
     }
   }
 
@@ -198,7 +182,6 @@ nav {
     left: 0;
     bottom: 0;
     width: 6px;
-  //   @include animation($name: kf-arrow-anime, $iteration: infinite, $duration: 2s, $timing-function: linear)
   }
 
   &__scrolltext {
@@ -212,10 +195,6 @@ nav {
 }
 
 .swiper-slide-active {
-  // & .swiper_title {
-  //   opacity: 1;
-  //   transform: translate(-20%, -20%);
-  // }
   & .hed_img {
     transform: none;
   }
@@ -234,24 +213,8 @@ nav {
     transition: transform 1.9s ease;
 }
 
-
-
-
-
-// @keyframes kf-arrow-anime {
-//   0%,
-//   50%,
-//   100% {
-//     transform: translateY(-10%);
-//   }
-//   30% {
-//     transform: none;
-//   }
-// }
-
-
 /*===============================
-CONCEPT
+            CONCEPT
 ===============================*/
 .concept {background-color: #fff;}
 
@@ -265,6 +228,10 @@ CONCEPT
   font-size: 50px;
   margin-top: 150px;
   text-align: center;
+}
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 2s;
 }
 
 .con_txt {
@@ -281,14 +248,9 @@ CONCEPT
     color: #000;
   }
 }
-
-
 /*===============================
-PRODUCT
+            PRODUCT
 ===============================*/
-.product {
-
-}
 .prd_inner__img {
   width: 100%;
   padding: 200px 0;
@@ -309,8 +271,6 @@ PRODUCT
     margin-bottom: 15px;
   }
 }
-
-
 /*===============================
     ABOUT KAKI
     =================================*/
@@ -335,9 +295,6 @@ PRODUCT
   font-size: 20px;
   margin-bottom: 10px;
 } 
-
-
-
 /*=========================
       shopping
 ===========================*/
@@ -390,10 +347,6 @@ PRODUCT
   width: 100%;
   padding: 175px 0;
 }
-
-
-
-
 /*=====================
         FOOTER
 =======================*/

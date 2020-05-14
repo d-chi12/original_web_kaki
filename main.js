@@ -1,4 +1,4 @@
-// header //
+//============= header ============//
 const selectElement = (s) => document.querySelector(s);
 
 selectElement('.open').addEventListener('click', () => {
@@ -10,11 +10,11 @@ selectElement('.close').addEventListener('click', () => {
     selectElement('.nav-list').classList.remove('active');
     console.log("bbbbbbbbbbb");
 })
-// end-of-header //
+//=========== end-of-header ==============//
 
 
 
-// top //
+//============= top ===============//
 document.addEventListener('DOMContentLoaded', function(){
     const hero = new HeroSlider('.swiper-container');
     hero.start();
@@ -53,9 +53,23 @@ class HeroSlider {
         this.swiper.autoplay.stop();
     }
 }
+//=========== end of top ===========//
 
-// end of top //
+//========= animation ===========//
 
-// consept //
+// $(function() {
+//     new WOW().init();
+// });
+// $(window).on('load', function () {
+//     $("#con-ttl-1").addClass("animated fadeInLeft");
+//     $("#home-heading-2").addClass("animated fadeInLeft");
+//     $("#home-text").addClass("animated zoomIn");
+//     $("#home-btn").addClass("animated zoomIn");
+//     $("#arrow-down i").addClass("animated fadeInDown infinite");
+// });
+
+//=========== end of animation ==========//
+
+//============= consept =============//
     
-// end of concept  //
+//============= end of concept  ==============//

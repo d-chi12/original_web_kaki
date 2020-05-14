@@ -228,7 +228,7 @@ nav {
 }
 
 /*===============================
-CONCEPT
+            CONCEPT
 ===============================*/
 .concept {
   background-color: #fff;
@@ -246,6 +246,10 @@ CONCEPT
   font-size: 50px;
   margin-top: 150px;
   text-align: center;
+}
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 2s;
 }
 
 .con_txt {
@@ -266,7 +270,7 @@ CONCEPT
 }
 
 /*===============================
-PRODUCT
+            PRODUCT
 ===============================*/
 .prd_inner__img {
   width: 100%;

@@ -76,14 +76,14 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="swiper_animation">
-                  <h1 class="swiper_title swiper_title__first">おいしいを</h1>
-                  <h1 class="swiper_title swiper_title__second">あなたへ</h1>
+                  <h1 class="swiper_title swiper_title__first  wow animate__animated animate__fadeInLeft">おいしいを</h1>
+                  <h1 class="swiper_title swiper_title__second wow animate__animated animate__fadeInDown">あなたへ</h1>
                 </div>
                 <img class="hed_img" src="kaki/kaki1.jpg" alt="">
               </div>
               <div class="swiper-slide swiper-slide-active">
-                <h1 class="swiper_title swiper_title__third">かきと共にいきる</h1>
-                <h1 class="swiper_title swiper_title__fourth">なかでFARM</h1>
+                <h1 class="swiper_title swiper_title__third wow fadeInDown" >かきと共にいきる</h1>
+                <h1 class="swiper_title swiper_title__fourth wow fadeInDown">なかでFARM</h1>
                 <img class="hed_img" src="kaki/kaki2.jpg" alt="">
               </div>
             </div>
@@ -103,9 +103,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="con__ttl animate__animated animate__fadeInLeft">農を未来へ</h2>
+            <h2 id="con-ttl-1" class="con__ttl wow animate__animated animate__fadeInLeft">農を未来へ</h2>
           </div>
-          <div class="con_txt col-md-12 animate__animated animate__fadeInRight">
+          <div class="con_txt col-md-12 wow animate__animated animate__fadeInRight">
             <p class="con_txt__p">未来に必要なものはたくさんある</p>
             <p class="con_txt__p">どんなに便利な世の中になったって、</p>
             <p class="con_txt__p">食べ物が乏しければ人は健やかに生きてはいけない。</p>
@@ -229,6 +229,10 @@
 
     <!-- end of FOOTER -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
