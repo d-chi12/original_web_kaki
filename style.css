@@ -168,8 +168,8 @@ nav {
 .swiper_title__second {
   top: 35%;
   left: 75%;
-  -webkit-transform: translate(-20%, calc(-20% + 20%));
-          transform: translate(-20%, calc(-20% + 20%));
+  -webkit-transform: translate(-35%, calc(-35% + 20%));
+          transform: translate(-35%, calc(-35% + 20%));
   z-index: 1;
   opacity: 2;
   -webkit-transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
@@ -179,8 +179,8 @@ nav {
 .swiper_title__third {
   top: 30%;
   left: 20%;
-  -webkit-transform: translate(-20%, calc(-20% + 20%));
-          transform: translate(-20%, calc(-20% + 20%));
+  -webkit-transform: translate(-30%, calc(-30% + 20%));
+          transform: translate(-30%, calc(-30% + 20%));
   z-index: 1;
   opacity: 2;
   -webkit-transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
@@ -190,47 +190,18 @@ nav {
 .swiper_title__fourth {
   top: 55%;
   left: 15%;
-  -webkit-transform: translate(-20%, calc(-20% + 20%));
-          transform: translate(-20%, calc(-20% + 20%));
+  -webkit-transform: translate(-55%, calc(-20% + 20%));
+          transform: translate(-55%, calc(-20% + 20%));
   z-index: 1;
   opacity: 2;
   -webkit-transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
   transition: opacity 0.3s ease 1s transform 0.3 ease 1s;
 }
 
-.swiper__footer {
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 2;
-  height: 70px;
-  width: 20px;
-  overflow: hidden;
-}
-
-.swiper__downarrow {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 6px;
-}
-
-.swiper__scrolltext {
-  position: absolute;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  color: rgba(255, 255, 255, 0.7);
-  left: -8px;
-  top: 11px;
-  font-size: 1.2em;
-}
-
 .swiper-slide-active .swiper_title {
   opacity: 1;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-20%, -20%);
+          transform: translate(-20%, -20%);
 }
 
 .swiper-slide-active .hed_img {
