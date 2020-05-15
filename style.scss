@@ -286,6 +286,51 @@ nav {
 .animate__animated.animate__fadeInleft {
   --animate-duration: 2s;
 }
+/*=========================
+      shopping
+===========================*/
+.shop {
+  text-align: center;
+  padding: 100px 0;
+
+  &_ttl {
+    font-size: 50px;
+
+  }
+  &_txt {
+    margin-top: 10px;
+  }
+  &_img {
+    text-align: center;
+    padding: 200px;
+    background-image: url(kaki/kaki5.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  &_inner {
+    background-color: rgba(255, 255, 255, 0.7);
+
+    &__ttl {
+      font-size: 30px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__txt {
+      font-size: 15px;
+      margin-bottom: 10px;  
+    }
+    &__txtz {
+      font-size: 20px;
+      padding: 20px 0;
+    }
+    // &__btn { padding-top: 30px; }
+  }
+}
+
+
+
+
 
 /*===============================
         ABOUT KAKI
@@ -311,37 +356,6 @@ nav {
   font-size: 20px;
   margin-bottom: 10px;
 } 
-/*=========================
-      shopping
-===========================*/
-.shopping { background-color: #f4f4f4; }
-
-.shop_inner__img {
-  width: 100%;
-  padding-top: 180px;
-  padding-bottom: 180px;
-}
-
-
-.shop_inner {
-  text-align: center;
-  &__ttl {
-    font-size: 50px;
-    padding: 180px 50px 50px 50px;
-    color: #000;
-  }
-  &__txt {
-    color: #000;
-    font-size: 15px;
-    margin-bottom: 10px;  
-  }
-  &__txtz {
-    font-size: 20px;
-    padding: 20px 0;
-  }
-}
-
-.shop_btn { padding-top: 30px; }
 
 /*=======================
         Profile
