@@ -16,25 +16,28 @@ Colors:
             Html, body
 ===============================*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i,800|Roboto&display=swap");
-html,
-body {
 
-}
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   color: white;
   font-family: "Hannari";
   margin: 0;
   padding: 0;
 }
 
+h4,
+h5,
+h6 {
+  color: #000;
+  font-family: "Hannari";
+  margin: 0;
+  padding: 0;
+}
+
 p {
-  color: white;
+  color: #000;
   font-family: "Sawarabi Mincho";
   margin: 0;
   padding: 0;
@@ -52,7 +55,8 @@ ul {
 /*===============================
             Vars
 ===============================*/
-$white_color: white;;
+$White: white;
+$Black: black;
 
 
 /*===============================
@@ -200,17 +204,11 @@ nav {
   }
 }
 
-.swiper-slide {
-  overflow: hidden;
-}
 .hed_img {
     width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
-    transform: scale(1.2);
-    transition: transform 1.9s ease;
 }
 
 /*===============================
@@ -224,7 +222,6 @@ nav {
 }
 
 .con__ttl {
-  color: #000;
   font-size: 50px;
   margin-top: 150px;
   text-align: center;
@@ -237,43 +234,62 @@ nav {
 .con_txt {
   text-align: center;
   font-size: 15px;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
   padding-top: 100px;
-  &__p {
-    margin-bottom: 10px;
-    color: #000;
-  }
-  &__pz {
-    margin-top: 30px;
-    color: #000;
-  }
+  &__p {margin-bottom: 10px;}
+  &__pz {margin-top: 30px;}
 }
 /*===============================
             PRODUCT
 ===============================*/
-.prd_inner__img {
-  width: 100%;
-  padding: 200px 0;
-}
-
-.prd_inner {
-
-  padding: 150px 50px;
-
-  &__ttl {
-    font-size: 40px;
-    padding: 50px  0;
-  }
+.prd {
+  background-color: #f4f4f4;
   
-  &__txt {
-    font-size: 20px;
-    // padding-top: px;
-    margin-bottom: 15px;
+  &_ttl {
+    font-size: 50px;
+    text-align: center;
+    padding: 200px 0;
+  }
+
+  &_inner {
+    text-align: center;
+    padding: 100px 0;
+
+    &__img {
+      width: 100%;
+    }
+
+    &__ttl {
+      font-size: 20px;
+      padding: 30px;
+    }
+
+    &__txt {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
   }
 }
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
+}
+.animate__animated.animate__fadeInRightBig {
+  --animate-duration: 1s;
+}
+.animate__animated.animate__fadeInRight {
+  --animate-duration: 2s;
+}
+.animate__animated.animate__fadeInLeftBig {
+  --animate-duration: 1s;
+}
+.animate__animated.animate__fadeInleft {
+  --animate-duration: 2s;
+}
+
 /*===============================
-    ABOUT KAKI
-    =================================*/
+        ABOUT KAKI
+=================================*/
 .abu_inner__img {
   width: 80%;
   padding-bottom: 150px;
@@ -350,9 +366,6 @@ nav {
 /*=====================
         FOOTER
 =======================*/
-.footer__sec {
-}
-
 .footer {
   background-color: #f4f4f4;
   text-align: center;
