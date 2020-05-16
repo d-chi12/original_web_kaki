@@ -357,7 +357,7 @@ nav {
 }
 
 /*===============================
-        ABOUT KAKI
+        Reviews
 =================================*/
 .abu_inner__img {
   width: 80%;
@@ -383,23 +383,32 @@ nav {
 /*=======================
         Profile
 =========================*/
-.profile {
-  background-color: white;
+.prf {
+  background-color: #f4f4f4;
 }
 
-.prf__ttl {
+.prf_ttl {
   font-size: 50px;
-  padding: 150px 0 50px 0;
+  padding-top: 100px;
+  text-align: center;
 }
 
-.prf__txt {
+.prf_inner {
+  padding: 100px 0;
+}
+
+.prf_inner__name {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.prf_inner__txt {
   font-size: 20px;
   margin-bottom: 5px;
 }
 
-.prf__img {
+.prf_inner__img {
   width: 100%;
-  padding: 175px 0;
 }
 
 /*=====================
