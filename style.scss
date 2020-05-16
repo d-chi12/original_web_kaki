@@ -22,7 +22,7 @@ h1,
 h2,
 h3 {
   color: white;
-  font-family: "Hannari";
+  font-family: 'Noto Serif JP', serif;
   margin: 0;
   padding: 0;
 }
@@ -31,20 +31,25 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-family: "Hannari";
+  font-family: 'Noto Serif JP', serif;
   margin: 0;
   padding: 0;
 }
 
 p {
   color: #000;
-  font-family: "Sawarabi Mincho";
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Sawarabi Mincho', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+// font-family: 'Noto Serif JP', serif;
+// font-family: 'Sawarabi Gothic', sans-serif;
+// font-family: 'Sawarabi Mincho', sans-serif;
+
 ul {
-  list-style: none;
+  // list-style: none;
 }
 
 .sec {
@@ -60,86 +65,137 @@ $Black: black;
 
 
 /*===============================
-            Navber
+            header
 ===============================*/
-header {
-  width: 100%;
-  height: 5rem;
-  background-color: #f4f4f4;
-}
-.containner {
-  width: 100%;
-  max-width: 98rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 1px solid rgba(255, 255, 255, .2);
-} 
-
-.inner_logo {
-  width: 100%;
-}
-
-.nav-brand {
-  width: 2rem;
-}
-
-.menu-icons i {
-  font-size: 3.5rem;
-  color: #000;
-  cursor: pointer;
-}
-
-.close i {
-  color: #DE6A1C;
-}
-
-.nav-list {
-  width: 25rem;
-  height: 100vh;
-  background-color: #fff;
+.hed {
   position: fixed;
   top: 0;
-  right: -26rem;
+  left: 0;
+  width: 100%;
+  // height: 100%;
+  background-color: transparent;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  z-index: 1500;
-  transition: all 650ms ease-in-out;
+  z-index: 10;
+
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &__img {
+      width: 5%;
+    } 
+    
+    &__ttl2 {
+      color: #DE6A1C;
+    }
+
+    &__ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    &__li {
+      padding: 0;
+      margin: 10px;
+      
+      & > a {
+        color: black;
+      }
+    }
+
+  }
 }
 
-.nav-list.active {
-  right: 0;
-}
 
-.close {
-  position: absolute;
-  top: 1rem;
-  left: 1.5rem;
-}
 
-.nav-item {
-  margin: 1.5rem 0;
-}
+// header {
+//   width: 100%;
+//   height: 5rem;
+//   background-color: #f4f4f4;
+// }
+// .containner {
+//   width: 100%;
+//   max-width: 98rem;
+//   margin: 0 auto;
+//   padding: 0 1.5rem;
+// }
 
-.nav-link {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  color: rgba(0,0,0, .7);
-}
+// nav {
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding-bottom: 1px solid rgba(255, 255, 255, .2);
+// } 
+
+// .inner_logo {
+//   width: 100%;
+// }
+
+// .nav-brand {
+//   width: 2rem;
+// }
+
+// .menu-icons i {
+//   font-size: 3.5rem;
+//   color: #000;
+//   cursor: pointer;
+// }
+
+// .close i {
+//   color: #DE6A1C;
+// }
+
+// .nav-list {
+//   width: 25rem;
+//   height: 100vh;
+//   background-color: #fff;
+//   position: fixed;
+//   top: 0;
+//   right: -26rem;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   z-index: 1500;
+//   transition: all 650ms ease-in-out;
+// }
+
+// .nav-list.active {
+//   right: 0;
+// }
+
+// .close {
+//   position: absolute;
+//   top: 1rem;
+//   left: 1.5rem;
+// }
+
+// .nav-item {
+//   margin: 1.5rem 0;
+// }
+
+// .nav-link {
+//   font-size: 1.6rem;
+//   text-transform: uppercase;
+//   color: rgba(0,0,0, .7);
+// }
 
 
 
 /*====================================
                 top
 ======================================*/
+#global-container {
+  padding-top: 100px;
+}
+
 .swiper {
   &-container {
     width: 100%;
@@ -391,31 +447,139 @@ nav {
 /*=====================
         FOOTER
 =======================*/
-.footer {
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
 .logo {
-  height:　150px;
-  width: 150px;
-  margin: 100px auto;
-  display: block;
+  font-size: 40px;
+  // display: flex;
+  text-align: center;
+
+  &__img {
+    width: 5%;
+  } 
+  
+  &__ttl2 {
+    color: #DE6A1C;
+  }
 }
 
-.fot__illust1 {
-  height: 200px;
-  width: 250px;
-  top: 50px;
-  left: 50px;
+.footer {
+  padding: 100px 0;
+  &__nav {
+    // @extend flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__ul {
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.fot__illust2 {
-  height: 200px;
-  width: 250px;
-  position: absolute;
-  top: 50px;
-  left: 450px;
+/*=========================
+      media queries 
+==========================*/
+@media screen and (min-width: 350px) {
+  // .hed__nav {
+  //   display: none;
+  // }
 }
 
-/*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 470px) {
+  .hero::before {
+      height: 9.4rem;
+      background: url("images/wave-medium.png");
+      background-size: cover;
+  }
+  .testimonials::before {
+      height: 9.4rem;
+      background: url("images/wave-medium.png");
+      background-size: cover;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+      height: 8rem;
+  }
+
+  .nav-brand {
+      width: 3.5rem;
+  }
+
+  .nav-list {
+      width: initial;
+      height: initial;
+      background-color: transparent;
+      position: initial;
+      top: initial;
+      right: initial;
+      flex-direction: row;
+      transition: initial;
+  }
+
+  .menu-icons {
+      display: none;
+  }
+
+  .nav-item {
+      margin: 0 2.5rem;
+  }
+
+  .nav-link, .current {
+      color: #fafafa;
+      position: relative;
+      font-size: 1.3rem;
+  }
+
+  .nav-link::before, 
+  .current::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -.5rem;
+      background-color: #eb648c;
+      width: 100%;
+      height: 2px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 650ms;
+  }
+
+  .current::before {
+      transform: scaleY(1);
+  }
+
+  .nav-link:hover::before {
+      transform: scaleX(1);
+  }
+
+  .hero {
+      height: 60vh;
+  }
+
+  .main-message {
+      transform: translateY(70%);
+  }
+
+  .title-heading h1 {
+      font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .hed {
+    display: block;
+  }
+  .mobile-menu {
+    &__btn{
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+      height: 75vh;
+  }
+}
