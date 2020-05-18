@@ -1,15 +1,23 @@
 //============= header ============//
-const selectElement = (s) => document.querySelector(s);
+// const selectElement = (s) => document.querySelector(s);
 
-selectElement('.open').addEventListener('click', () => {
-    selectElement('.nav-list').classList.add('active');
-    console.log("aaaaaaaaaaaa");
-});
+// selectElement('.open').addEventListener('click', () => {
+//     selectElement('.nav-list').classList.add('active');
+//     console.log("aaaaaaaaaaaa");
+// });
 
-selectElement('.close').addEventListener('click', () => {
-    selectElement('.nav-list').classList.remove('active');
-    console.log("bbbbbbbbbbb");
-})
+// selectElement('.close').addEventListener('click', () => {
+//     selectElement('.nav-list').classList.remove('active');
+//     console.log("bbbbbbbbbbb");
+// })
+const header = document.querySelector('.hed');
+const _navAnimation = function(el, inview) {
+    if(inview) {
+        el.classList.remove('triggered');
+    } else {
+        el.classList.add('triggered');
+    }
+}
 //=========== end-of-header ==============//
 
 

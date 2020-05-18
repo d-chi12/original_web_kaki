@@ -5,46 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>なかでFARM</title>
     <!-- animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <!-- icon -->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"/>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Sawarabi+Gothic&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Sawarabi+Gothic&family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- header -->
+    <div class="nav_trigger"></div>
     <header class="hed">
-      <div class="hed_inner">
-        <div class="hed_inner__logo">
-          <img class="hed_inner__img" src="kaki/logo.jpg" alt="" />
-          <span class="hed_inner__ttl">なかで</span>
-          <span class="hed_inner__ttl2">FARM</span>
+      <div class="container">
+        <div class="hed_inner row">
+          <div class="hed_inner__logo col-md-6 col-sm-4 col-xs-12">
+            <img class="hed_inner__img" src="kaki/logo.jpg" alt="" />
+            <span class="hed_inner__ttl">なかで</span>
+            <span class="hed_inner__ttl2">FARM</span>
+          </div>
+          <div class="col-md-6 col-sm-8 col-xs-12">
+            <nav class="hed_inner__nav">
+              <ul class="hed_inner__ul">
+                <li class="hed_inner__li"><a href="#">home</a></li>
+                <li class="hed_inner__li"><a href="#">農の未来</a></li>
+                <li class="hed_inner__li"><a href="#">3つのこだわり</a></li>
+                <li class="hed_inner__li"><a href="#">商品紹介</a></li>
+                <li class="hed_inner__li"><a href="#">自己紹介</a></li>
+              </ul>
+            </nav>
+            <button class="mobile-menu__btn">
+              onclick="document.querySelector('body').classList.toggle('menu-open');">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
-        <nav class="hed_inner__nav">
-          <ul class="hed_inner__ul">
-            <li class="hed_inner__li"><a href="#">home</a></li>
-            <li class="hed_inner__li"><a href="#">農の未来</a></li>
-            <li class="hed_inner__li"><a href="#">3つのこだわり</a></li>
-            <li class="hed_inner__li"><a href="#">商品紹介</a></li>
-            <li class="hed_inner__li"><a href="#">自己紹介</a></li>
-          </ul>
-        </nav>
-        <button class="mobile-menu__btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </div>
     </header>
-
 
     <!-- <header>
       <div class="containner">
@@ -85,23 +110,25 @@
     <div id="global-container">
       <div id="container">
         <div class="swiper">
-          <div class="swiper-container">
+          <div class="swiper-container row">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="swiper_animation">
                   <h1 class="swiper_title swiper_title__first">おいしいを</h1>
                   <h1 class="swiper_title swiper_title__second">あなたへ</h1>
                 </div>
-                <img class="hed_img" src="kaki/kaki1.jpg" alt="">
+                <img class="hed_img" src="kaki/kaki1.jpg" alt="" />
               </div>
               <div class="swiper-slide swiper-slide-active">
-                <h1 class="swiper_title swiper_title__third" >かきと共にいきる</h1>
+                <h1 class="swiper_title swiper_title__third">
+                  かきと共にいきる
+                </h1>
                 <h1 class="swiper_title swiper_title__fourth">なかでFARM</h1>
-                <img class="hed_img" src="kaki/kaki2.jpg" alt="">
+                <img class="hed_img" src="kaki/kaki2.jpg" alt="" />
               </div>
             </div>
             <div class="swiper__footer">
-              <img class="swiper__downarrow" src="kaki/arrow.svg" alt="">
+              <img class="swiper__downarrow" src="kaki/arrow.svg" alt="" />
               <span class="swiper__scrolltext">scroll</span>
             </div>
           </div>
@@ -115,14 +142,27 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h4 id="con-ttl-1" class="con__ttl wow animate__animated animate__fadeInLeft">農を未来へ</h4>
+            <h4
+              id="con-ttl-1"
+              class="con__ttl wow animate__animated animate__fadeInLeft"
+            >
+              農を未来へ
+            </h4>
           </div>
-          <div class="con_txt col-md-12 wow animate__animated animate__fadeInRight">
+          <div
+            class="con_txt col-md-12 wow animate__animated animate__fadeInRight"
+          >
             <p class="con_txt__p">未来に必要なものはたくさんある</p>
             <p class="con_txt__p">どんなに便利な世の中になったって、</p>
-            <p class="con_txt__p">食べ物が乏しければ人は健やかに生きてはいけない。</p>
-            <p class="con_txt__p">それを作っている農家さんも、未来になくてはならない存在。</p>
-            <p class="con_txt__p">なかでFARMは農業の素晴らしさを柿を通して伝えていく。</p>
+            <p class="con_txt__p">
+              食べ物が乏しければ人は健やかに生きてはいけない。
+            </p>
+            <p class="con_txt__p">
+              それを作っている農家さんも、未来になくてはならない存在。
+            </p>
+            <p class="con_txt__p">
+              なかでFARMは農業の素晴らしさを柿を通して伝えていく。
+            </p>
             <p class="con_txt__pz">未来に必要なものたちを。</p>
           </div>
         </div>
@@ -133,17 +173,22 @@
     <!-- Product -->
     <section class="prd sec">
       <div class="container">
-        <h5 class="prd_ttl wow animate__animated animate__fadeIn">3つのこだわり</h5>
+        <h5 class="prd_ttl wow animate__animated animate__fadeIn">
+          3つのこだわり
+        </h5>
         <div class="row prd_inner">
-            <div class="col-md-4 wow animate__animated animate__fadeInRightBig">
-              <img class="prd_inner__img" src="kaki/sand.jpg" alt="" />
-            </div>
-            <div id="animation" class="col-md-8 wow animate__animated animate__fadeInRight">
-              <p class="prd_inner__ttl">〜土作り〜</p>
-              <p class="prd_inner__txt">自然農法にこだわり、</p>
-              <p class="prd_inner__txt">無農薬、無肥料、無除草剤での生産。</p>
-              <p class="prd_inner__txt">自然本来の味わいに。</p>
-            </div>
+          <div class="col-md-4 wow animate__animated animate__fadeInRightBig">
+            <img class="prd_inner__img" src="kaki/sand.jpg" alt="" />
+          </div>
+          <div
+            id="animation"
+            class="col-md-8 wow animate__animated animate__fadeInRight"
+          >
+            <p class="prd_inner__ttl">〜土作り〜</p>
+            <p class="prd_inner__txt">自然農法にこだわり、</p>
+            <p class="prd_inner__txt">無農薬、無肥料、無除草剤での生産。</p>
+            <p class="prd_inner__txt">自然本来の味わいに。</p>
+          </div>
         </div>
         <div class="row prd_inner">
           <div class="col-md-8 wow animate__animated animate__fadeInLeft">
@@ -166,7 +211,7 @@
             <p class="prd_inner__txt">新鮮な柿をその日に</p>
             <p class="prd_inner__txt">お届け！</p>
           </div>
-        </div>  
+        </div>
       </div>
     </section>
     <!-- End of CONCEPT -->
@@ -180,10 +225,15 @@
             <p class="shop_txt">送料無料でお届け。</p>
           </div>
           <div class="col-md-12 shop_img">
-            <div id="shop_animation" class="shop_inner wow animate__animated animate__fadeIn">
+            <div
+              id="shop_animation"
+              class="shop_inner wow animate__animated animate__fadeIn"
+            >
               <h5 class="shop_inner__ttl">富幸柿</h5>
               <p class="shop_inner__txt">甘味が強く果汁も多いのが特徴です。</p>
-              <p class="shop_inner__txt">日持ちも良く輸送性にも優れており、贈答用によく使われます。</p>
+              <p class="shop_inner__txt">
+                日持ちも良く輸送性にも優れており、贈答用によく使われます。
+              </p>
               <p class="shop_inner__txtz">3個入り　440円（税抜き）</p>
               <div class="shop_inner__btn">
                 <a href="" class="btn">お問い合わせ</a>
@@ -194,7 +244,7 @@
       </div>
     </section>
     <!-- end of shopping -->
-    
+
     <!-- Reviews -->
     <!-- <section class="rev sec">
       <div class="container">
@@ -224,8 +274,12 @@
           <div class="col-md-6 prd_inner">
             <p class="prf_inner__name">中出大智</p>
             <p class="prf_inner__txt">1994年生まれ25歳。石川県生まれ。</p>
-            <p class="prf_inner__txt">祖母が農家で幼い頃から新鮮な野菜を食す。</p>
-            <p class="prf_inner__txt">21歳から世界を飛び回り多様な文化に触れ,</p>
+            <p class="prf_inner__txt">
+              祖母が農家で幼い頃から新鮮な野菜を食す。
+            </p>
+            <p class="prf_inner__txt">
+              21歳から世界を飛び回り多様な文化に触れ,
+            </p>
             <p class="prf_inner__txt">命の源である食の大切さに気付く。</p>
             <p class="prf_inner__txt">25歳で日本に帰国。</p>
             <p class="prf_inner__txt">農業にたずさわる仕事がしたいと思い,</p>
@@ -248,11 +302,9 @@
             <span class="logo__ttl">なかで</span>
             <span class="logo__ttl2">FARM</span>
           </div>
-        <nav class="footer__nav">
-          <ul>
-            
-          </ul>
-        </nav>
+          <nav class="footer__nav">
+            <ul></ul>
+          </nav>
         </div>
       </div>
     </footer>
