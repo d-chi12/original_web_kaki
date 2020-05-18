@@ -41,70 +41,67 @@
   </head>
   <body>
     <!-- header -->
-    <div class="nav_trigger"></div>
-    <header class="hed">
-      <div class="container">
-        <div class="hed_inner row">
-          <div class="hed_inner__logo col-md-6 col-sm-4 col-xs-12">
-            <img class="hed_inner__img" src="kaki/logo.jpg" alt="" />
-            <span class="hed_inner__ttl">なかで</span>
-            <span class="hed_inner__ttl2">FARM</span>
-          </div>
-          <div class="col-md-6 col-sm-8 col-xs-12">
-            <nav class="hed_inner__nav">
-              <ul class="hed_inner__ul">
-                <li class="hed_inner__li"><a href="#">home</a></li>
-                <li class="hed_inner__li"><a href="#">農の未来</a></li>
-                <li class="hed_inner__li"><a href="#">3つのこだわり</a></li>
-                <li class="hed_inner__li"><a href="#">商品紹介</a></li>
-                <li class="hed_inner__li"><a href="#">自己紹介</a></li>
-              </ul>
-            </nav>
-            <button class="mobile-menu__btn">
-              onclick="document.querySelector('body').classList.toggle('menu-open');">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- <header>
-      <div class="containner">
-        <nav>
-          <div class="nav-brand">
-            <a href="index.html">
-              <img class="inner_logo" src="kaki/logo.jpg" alt="" />
-            </a>
-          </div>
-          <div class="menu-icons open">
-            <i class="icon ion-md-menu"></i>
-          </div>
-          <ul class="nav-list">
-            <div class="menu-icons close">
-              <i class="icon ion-md-close"></i>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <div class="nav_trigger"></div>
+        <header class="hed">
+          <div class="hed_inner row">
+            <div class="hed_inner__logo">
+              <img class="hed_inner__img" src="kaki/logo.jpg" alt="" />
+              <span class="hed_inner__ttl">なかで</span>
+              <span class="hed_inner__ttl2">FARM</span>
             </div>
-            <li class="nav-item">
-              <a href="#" class="nav-link current">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">農を未来へ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">3つのこだわり</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">商品</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">生産者</a>
-            </li>
-          </ul>
-        </nav>
+            <!-- <div class="col-md-6 col-sm-8 col-xs-12"> -->
+              <nav class="hed_inner__nav">
+                <ul class="hed_inner__ul">
+                  <li class="hed_inner__li"><a href="#">home</a></li>
+                  <li class="hed_inner__li"><a href="#">農の未来</a></li>
+                  <li class="hed_inner__li"><a href="#">3つのこだわり</a></li>
+                  <li class="hed_inner__li"><a href="#">商品紹介</a></li>
+                  <li class="hed_inner__li"><a href="#">自己紹介</a></li>
+                </ul>
+              </nav>
+              <button class="mobile-menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            <!-- </div> -->
+          </div>
+        </header>
       </div>
-    </header>-->
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__main">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    <span class="main-title">home</span>
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    <span class="main-title">農の未来</span>
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    <span class="main-title">3つのこだわり</span>
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    <span class="main-title">商品紹介</span>
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    <span class="main-title">自己紹介</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- </header> -->
 
     <!-- top -->
     <div id="global-container">
