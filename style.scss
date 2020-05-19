@@ -58,6 +58,11 @@ ul {
   height: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /*===============================
             Vars
 ===============================*/
@@ -130,9 +135,6 @@ $cMenuOpen: $cBlack;
 /*====================================
                 top
 ======================================*/
-#global-container {
-  padding-top: 100px;
-}
 
 .swiper {
   &-container {
@@ -420,7 +422,11 @@ $cMenuOpen: $cBlack;
 @media screen and (min-width: 350px) {
   .hed_inner__nav {
     display: none;
-}
+  }
+
+  .mobile-menu__btn {
+    text-align: right;
+  }
 }
 
 @media screen and (min-width: 470px) {

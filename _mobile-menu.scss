@@ -3,6 +3,12 @@ $cWhite: white;
 $cMenuClose: $cBlack;
 $cMenuOpen: $cBlack;
 
+#container {
+    position: relative;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
 
 .mobile-menu {
     position: fixed;
@@ -73,6 +79,7 @@ $cMenuOpen: $cBlack;
 
 .menu-open {
     & #container {
+        background-color: white;
         transform: translate(-300px, 60px);
         box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
     }
@@ -81,6 +88,11 @@ $cMenuOpen: $cBlack;
         &__cover {
             opacity: 1;
             visibility: visible;
+        }
+
+        &__main {
+            color: $cBlack;
+            
         }
 
         &__item {

@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i,800|Roboto&display=swap");
+#container {
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .mobile-menu {
   position: fixed;
   right: 0;
@@ -77,6 +84,7 @@
 }
 
 .menu-open #container {
+  background-color: white;
   -webkit-transform: translate(-300px, 60px);
           transform: translate(-300px, 60px);
   -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
@@ -86,6 +94,10 @@
 .menu-open .mobile-menu__cover {
   opacity: 1;
   visibility: visible;
+}
+
+.menu-open .mobile-menu__main {
+  color: black;
 }
 
 .menu-open .mobile-menu__item {
@@ -190,6 +202,11 @@ p {
   height: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /*===============================
             Vars
 ===============================*/
@@ -266,10 +283,6 @@ p {
 /*====================================
                 top
 ======================================*/
-#global-container {
-  padding-top: 100px;
-}
-
 .swiper-container {
   width: 100%;
   height: 700px;
@@ -574,6 +587,9 @@ p {
 @media screen and (min-width: 350px) {
   .hed_inner__nav {
     display: none;
+  }
+  .mobile-menu__btn {
+    text-align: right;
   }
 }
 

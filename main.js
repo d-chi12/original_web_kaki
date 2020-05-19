@@ -1,11 +1,12 @@
 //============= header ============//
+
 class MobileMenu {
     constructor() {
     this.DOM = {};
     this.DOM.btn = document.querySelector('.mobile-menu__btn');
     this.DOM.cover = document.querySelector('.mobile-menu__cover');
     this.DOM.container = document.querySelector('#globle-container');
-    this.eventType = window.ontouchstart ? 'touchstart' : 'click';
+    this.eventType = this._getEventType();
     this._addEvent();
     }
 
@@ -26,18 +27,18 @@ class MobileMenu {
 new MobileMenu();
 
 
-// ===============Scroll==============//
+// ===============Scroll trigger==============//
 
-const hed = document.querySelector('.hed');
-const _navAnimation = function(el, inview) {
-    if(inview) {
-        hed.classList.remove('triggered');
-    } else {
-        hed.classList.add('triggered');
-    }
-}
+// const hed = document.querySelector('.hed');
+// const _navAnimation = function(el, inview) {
+//     if(inview) {
+//         hed.classList.remove('triggered');
+//     } else {
+//         hed.classList.add('triggered');
+//     }
+// }
 
-const so3 = new ScrollObserver('.nav-trigger', _navAnimation, {once: false})
+// const so3 = new ScrollObserver('.nav-trigger', _navAnimation, {once: false})
 
 //=========== end-of-header ==============//
 
