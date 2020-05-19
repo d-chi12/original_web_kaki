@@ -15,6 +15,7 @@ $cMenuOpen: $cBlack;
     right: 0;
     top: 60px;
     width: 300px;
+    z-index: 10;
 
     &__cover {
         position: absolute;
@@ -80,8 +81,8 @@ $cMenuOpen: $cBlack;
 .menu-open {
     & #container {
         background-color: white;
-        transform: translate(-300px, 60px);
-        box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+        transform: translate(-300px, 0);
+        box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 3);
     }
 
     & .mobile-menu {

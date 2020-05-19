@@ -84,32 +84,36 @@ $cMenuOpen: $cBlack;
   display: flex;
   align-items: center;
   z-index: 10;
+  // border-bottom: 1px solid rgba(255,255,255,0.1);
 
-  & .triggerd {
-    background-color: rgba(255, 255, 255, 0.7);
+  & .triggered {
+    background-color: rgba(38,50,70,0.9);
     box-shadow: 10px 0 25px -10px rgba(0,0,0,0.5);
   }
-
+  
   &_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 5px;
+    padding: 0 100px;
 
     &__img { width: 5%; } 
+
+    &__ttl { color:$cBlack; }
     
     &__ttl2 {
+      font-size: 20px;
       color: #DE6A1C;
     }
 
     &__ul {
+      padding-right: 100px;
       display: flex;
       align-items: center;
       padding: 0;
-      margin: 0;
+      margin: 0 0 0 -430px;
       list-style: none;
-      padding-left: 85px;
     }
 
     &__li {
@@ -117,21 +121,11 @@ $cMenuOpen: $cBlack;
       margin: 10px;
       
       & > a {
-        color: black;
+        color: $cBlack;
       }
     }
   }
 }
-
-// .mobile-menu__btn {
-//   display: none;
-// }
-
-/*===============================
-        humbergerbtn
-===============================*/
-
-
 /*====================================
                 top
 ======================================*/
@@ -148,12 +142,14 @@ $cMenuOpen: $cBlack;
     -ms-writing-mode: tb-rl;
     
     &__first {
-      top: 20%;
-      left: 80%;
+      // top: 20%;
+      // left: 80%;
+      padding: 20% 0 10% 130%;
     }
     &__second {
-      top: 35%;
-      left: 75%;
+      // top: 35%;
+      // left: 75%;
+      padding: 35% 0 10% 120%;
       
     }
     &__third {
@@ -323,11 +319,6 @@ $cMenuOpen: $cBlack;
     // &__btn { padding-top: 30px; }
   }
 }
-
-
-
-
-
 /*===============================
         Reviews
 =================================*/
@@ -383,7 +374,6 @@ $cMenuOpen: $cBlack;
     }
   }
 }
-
 /*=====================
         FOOTER
 =======================*/
@@ -415,7 +405,6 @@ $cMenuOpen: $cBlack;
     margin: 0;
   }
 }
-
 /*=========================
       media queries 
 ==========================*/

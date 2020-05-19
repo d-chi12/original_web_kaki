@@ -42,18 +42,16 @@
   <body>
     <div id="container">
       <div id="globle-container">
-      </div>
         <!-- header -->
         <div class="mobile-menu__cover"></div>
-        <div class="nav_trigger"></div>
+        <div class="nav-trigger"></div>
         <header class="hed">
-          <div class="hed_inner row">
+          <div class="hed_inner">
             <div class="hed_inner__logo">
               <img class="hed_inner__img" src="kaki/logo.jpg" alt="" />
               <span class="hed_inner__ttl">なかで</span>
               <span class="hed_inner__ttl2">FARM</span>
             </div>
-            <!-- <div class="col-md-6 col-sm-8 col-xs-12"> -->
             <nav class="hed_inner__nav">
               <ul class="hed_inner__ul">
                 <li class="hed_inner__li"><a href="#">home</a></li>
@@ -68,7 +66,6 @@
               <span></span>
               <span></span>
             </button>
-            <!-- </div> -->
           </div>
         </header>
         <nav class="mobile-menu">
@@ -104,27 +101,27 @@
 
         <!-- top -->
         <div class="swiper">
-          <div class="swiper-container row">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper_animation">
-                  <h1 class="swiper_title swiper_title__first">おいしいを</h1>
-                  <h1 class="swiper_title swiper_title__second">あなたへ</h1>
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper_animation">
+                    <h1 class="swiper_title swiper_title__first">おいしいを</h1>
+                    <h1 class="swiper_title swiper_title__second">あなたへ</h1>
+                  </div>
+                  <img class="hed_img" src="kaki/kaki1.jpg" alt="" />
                 </div>
-                <img class="hed_img" src="kaki/kaki1.jpg" alt="" />
+                <div class="swiper-slide swiper-slide-active">
+                  <h1 class="swiper_title swiper_title__third">
+                    かきと共にいきる
+                  </h1>
+                  <h1 class="swiper_title swiper_title__fourth">なかでFARM</h1>
+                  <img class="hed_img" src="kaki/kaki2.jpg" alt="" />
+                </div>
               </div>
-              <div class="swiper-slide swiper-slide-active">
-                <h1 class="swiper_title swiper_title__third">
-                  かきと共にいきる
-                </h1>
-                <h1 class="swiper_title swiper_title__fourth">なかでFARM</h1>
-                <img class="hed_img" src="kaki/kaki2.jpg" alt="" />
+              <div class="swiper__footer">
+                <img class="swiper__downarrow" src="kaki/arrow.svg" alt="" />
+                <span class="swiper__scrolltext">scroll</span>
               </div>
-            </div>
-            <div class="swiper__footer">
-              <img class="swiper__downarrow" src="kaki/arrow.svg" alt="" />
-              <span class="swiper__scrolltext">scroll</span>
-            </div>
           </div>
         </div>
         <!-- End of top -->
@@ -223,10 +220,7 @@
                 <p class="shop_txt">送料無料でお届け。</p>
               </div>
               <div class="col-md-12 shop_img">
-                <div
-                  id="shop_animation"
-                  class="shop_inner wow animate__animated animate__fadeIn"
-                >
+                <div id="shop_animation" class="shop_inner wow animate__animated animate__fadeIn col-md-12">
                   <h5 class="shop_inner__ttl">富幸柿</h5>
                   <p class="shop_inner__txt">
                     甘味が強く果汁も多いのが特徴です。
@@ -244,25 +238,6 @@
           </div>
         </section>
         <!-- end of shopping -->
-
-        <!-- Reviews -->
-        <!-- <section class="rev sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h4 class="abu_ttl">口コミ</h4>
-            <img class="abu_inner__img" src="kaki/kaki8-2.jpg" alt="" />
-          </div>
-          <div class="abu_inner col-md-6">
-            <img class="abu_inner__img2" src="kaki/kaki7-2.jpg" alt="" />
-            <p class="abu_inner__txt">そんな土地から生まれた</p>
-            <p class="abu_inner__txt">「富幸柿」は糖度20%以上と、</p>
-            <p class="abu_inner__txt">まさに奇跡の柿です。</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-        <!-- end of Reviews -->
 
         <!-- PROFILE -->
         <section class="sec prf">
@@ -311,6 +286,7 @@
           </div>
         </footer>
         <!-- end of FOOTER -->
+      </div>
     </div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
