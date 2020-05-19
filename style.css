@@ -550,6 +550,7 @@ body {
         FOOTER
 =======================*/
 .logo {
+  padding-top: 50px;
   font-size: 40px;
   text-align: center;
 }
@@ -562,23 +563,9 @@ body {
   color: #DE6A1C;
 }
 
-.footer {
-  padding: 100px 0;
-}
-
-.footer__nav {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.footer__sns {
+  padding-top: 20px;
   text-align: center;
-}
-
-.footer__ul {
-  padding: 0;
-  margin: 0;
 }
 
 /*=========================
