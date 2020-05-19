@@ -23,11 +23,12 @@ $cMenuOpen: $cBlack;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: $cWhite;
         opacity: 0;
         visibility: hidden;
         transition: opacity 1s;
         cursor: pointer;
+        z-index: 10;
     }
 
     &__main {
@@ -82,7 +83,7 @@ $cMenuOpen: $cBlack;
     & #container {
         background-color: white;
         transform: translate(-300px, 0);
-        box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 3);
+        box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.1);
     }
 
     & .mobile-menu {

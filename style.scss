@@ -316,34 +316,27 @@ $cMenuOpen: $cBlack;
       font-size: 20px;
       padding: 20px 0;
     }
-    // &__btn { padding-top: 30px; }
+    &__btn {
+      position: relative;
+      display: inline-block;
+      background-color: $cWhite;
+      border: 1px solid $cBlack;
+      font-weight: 600;
+      padding: 10px 40px;
+      margin: 10px auto;
+      cursor: pointer;
+      transition: all 0.3s;
+      color: $cBlack;
+      text-decoration: none !important;
+    }
+    
+    &__float:hover {
+      background-color: $cBlack;
+      color: $cWhite;
+      box-shadow:  5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
   }
 }
-/*===============================
-        Reviews
-=================================*/
-.abu_inner__img {
-  width: 80%;
-  padding-bottom: 150px;
-}
-
-.abu_inner__img2 {
-  width: 80%;
-  padding: 50px 0;
-
-}
-
-.abu_inner__ttl {
-  font-size: 50px;
-  padding-top: 50px;
-  margin-bottom: 100px;
-}
-
-.abu_inner__txt {
-  font-size: 20px;
-  margin-bottom: 10px;
-} 
-
 /*=======================
         Profile
 =========================*/
