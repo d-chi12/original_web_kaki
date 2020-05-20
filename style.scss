@@ -42,7 +42,7 @@ span {
 h4,
 h5,
 h6 {
-  color: #000;
+  color: $cWhite;
   font-family: 'Noto Serif JP', serif;
   margin: 0;
   padding: 0;
@@ -60,9 +60,6 @@ p {
 // font-family: 'Sawarabi Gothic', sans-serif;
 // font-family: 'Sawarabi Mincho', sans-serif;
 
-ul {
-  // list-style: none;
-}
 
 .sec {
   width: 100%;
@@ -141,7 +138,7 @@ body {
     position: absolute;
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
-    color: $cWhite;;
+    color: $cWhite;
     
     &__first {
       // top: 20%;
@@ -286,42 +283,38 @@ body {
 ===========================*/
 .shop {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
 
   &_ttl {
     font-size: 50px;
 
   }
+
   &_txt {
-    margin-top: 10px;
-    padding-bottom: 50px;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    color: #f4f4f4;
   }
+
   &_inner {
-    background-color: rgba(255, 255, 255, 0.7);
-    top: -500px;
-    
-    &__img {
-      text-align: center;
-      width: 100%;
-      // padding: 200px;
-      // background-image: url(kaki/kaki5.jpg);
-      background-position: center;
-      background-size: cover;
-    }
 
     &__ttl {
       font-size: 30px;
       padding-top: 10px;
       margin-bottom: 10px;
+      color: #fd951e;
     }
 
     &__txt {
       font-size: 15px;
-      margin-bottom: 10px;  
+      margin-bottom: 10px;
+      color: #f4f4f4;
     }
+
     &__txtz {
       font-size: 20px;
       padding: 20px 0;
+      color: #f4f4f4;
     }
     &__btn {
       position: relative;
@@ -333,16 +326,25 @@ body {
       margin: 10px auto;
       cursor: pointer;
       transition: all 0.3s;
-      color: #DE6A1C;
+      color: #fd951e;
       text-decoration: none !important;
     }
 
     &__float:hover {
-      background-color: #DE6A1C;
+      background-color: #fd951e;
       color: $cWhite;
       box-shadow:  5px 5px 10px 0 rgba(0, 0, 0, 0.5);
     }
   }
+}
+#statement {
+  background-image: url("kaki/kaki5.jpg");
+  background-size: cover;
+  height: 700px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
 }
 /*=======================
         Profile
@@ -417,12 +419,6 @@ body {
   .mobile_img {
     top:-200px;
   }
-
-  .shop_inner {
-    position: initial;
-    background-color: rgb(245,244,240);
-    margin-bottom: 50px;
-  }
 }
 
 // =======Small Device======= //
@@ -434,13 +430,6 @@ body {
 
   .mobile-menu__btn {
     text-align: right;
-  }
-
-  .shop_inner {
-    position: initial;
-    padding: 10px 0;
-    background-color: rgb(245,244,240);
-    margin-bottom: 50px;
   }
 }
 

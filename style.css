@@ -190,7 +190,7 @@ span {
 h4,
 h5,
 h6 {
-  color: #000;
+  color: white;
   font-family: 'Noto Serif JP', serif;
   margin: 0;
   padding: 0;
@@ -458,7 +458,7 @@ body {
 ===========================*/
 .shop {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .shop_ttl {
@@ -466,36 +466,28 @@ body {
 }
 
 .shop_txt {
-  margin-top: 10px;
-  padding-bottom: 50px;
-}
-
-.shop_inner {
-  background-color: rgba(255, 255, 255, 0.7);
-  top: -500px;
-}
-
-.shop_inner__img {
-  text-align: center;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
+  margin-top: 20px;
+  padding-bottom: 100px;
+  color: #f4f4f4;
 }
 
 .shop_inner__ttl {
   font-size: 30px;
   padding-top: 10px;
   margin-bottom: 10px;
+  color: #fd951e;
 }
 
 .shop_inner__txt {
   font-size: 15px;
   margin-bottom: 10px;
+  color: #f4f4f4;
 }
 
 .shop_inner__txtz {
   font-size: 20px;
   padding: 20px 0;
+  color: #f4f4f4;
 }
 
 .shop_inner__btn {
@@ -509,15 +501,25 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: #DE6A1C;
+  color: #fd951e;
   text-decoration: none !important;
 }
 
 .shop_inner__float:hover {
-  background-color: #DE6A1C;
+  background-color: #fd951e;
   color: white;
   -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#statement {
+  background-image: url("kaki/kaki5.jpg");
+  background-size: cover;
+  height: 700px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
 }
 
 /*=======================
@@ -589,11 +591,6 @@ body {
   .mobile_img {
     top: -200px;
   }
-  .shop_inner {
-    position: initial;
-    background-color: #f5f4f0;
-    margin-bottom: 50px;
-  }
 }
 
 @media screen and (min-width: 760px) and (max-width: 991px) {
@@ -602,12 +599,6 @@ body {
   }
   .mobile-menu__btn {
     text-align: right;
-  }
-  .shop_inner {
-    position: initial;
-    padding: 10px 0;
-    background-color: #f5f4f0;
-    margin-bottom: 50px;
   }
 }
 
