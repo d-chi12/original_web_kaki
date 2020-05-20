@@ -406,7 +406,7 @@ body {
   }
 
   .mobile_txt {
-    top: 350px;
+    top: 200px;
   }
 
   .mobile_img {
@@ -435,6 +435,41 @@ body {
       font-size: 12px;
     }
   }
+
+  .con {
+    &__ttl { font-size: 30px; }
+    &_txt__p { font-size: 10px; }
+  }
+
+  .prd {
+    &_ttl { font-size: 30px; }
+    &_inner__txt2 { font-size: 20px; }
+    &_inner__txt3 { font-size: 10px; }
+  }
+
+  .shop {
+    &_ttl { font-size: 30px; }
+    &_txt { font-size: 15px; }
+    &_inner{
+      &__ttl { font-size: 20px; }
+      &__txt { font-size: 10px; }
+      &__txtz { font-size: 15px; }
+    }
+  }
+
+  .prf {
+    &_ttl { font-size: 30px; }
+    &_inner {
+      &__name {font-size: 20px; }
+      &__txt { font-size: 10px; }
+    }
+  }
+
+  .logo {
+    &__img { width: 7%; }
+    &__ttl { font-size: 10px; }
+    &__ttl2 { font-size: 10px; }
+  }
 }
 
 // ======Medium iPhone===== //
@@ -448,7 +483,7 @@ body {
   }
 
   .mobile_txt {
-    top: 350px;
+    top: 300px;
   }
 
   .mobile_img {
@@ -477,9 +512,44 @@ body {
       font-size: 15px;
     }
   }
+
+  .con {
+    &__ttl { font-size: 32px; }
+    &_txt__p { font-size: 12px; }
+  }
+
+  .prd {
+    &_ttl { font-size: 32px; }
+    &_inner__txt2 { font-size: 22px; }
+    &_inner__txt3 { font-size: 12px; }
+  }
+
+  .shop {
+    &_ttl { font-size: 32px; }
+    &_txt { font-size: 17px; }
+    &_inner{
+      &__ttl { font-size: 22px; }
+      &__txt { font-size: 12px; }
+      &__txtz { font-size: 17px; }
+    }
+  }
+
+  .prf {
+    &_ttl { font-size: 32px; }
+    &_inner {
+      &__name {font-size: 22px; }
+      &__txt { font-size: 12px; }
+    }
+  }
+
+  .logo {
+    &__img { width: 7%; }
+    &__ttl { font-size: 10px; }
+    &__ttl2 { font-size: 10px; }
+  }
 }
 
-//========Large Devices==========//
+//========Large iphone=========//
 @media screen and (min-width: 480px) and (max-width: 649px) {
   .hed_inner__nav {
     display: none;
@@ -487,6 +557,14 @@ body {
 
   .mobile-menu__btn {
     text-align: right;
+  }
+
+  .mobile_txt {
+    top: 350px;
+  }
+
+  .mobile_img {
+    top:-200px;
   }
 
   .swiper_title {
@@ -507,11 +585,117 @@ body {
       font-size: 20px;
     }
   }
+
+  .con {
+    &__ttl { font-size: 35px; }
+    &_txt__p { font-size: 15px; }
+  }
+
+  .prd {
+    &_ttl { font-size: 35px; }
+    &_inner__txt2 { font-size: 25px; }
+    &_inner__txt3 { font-size: 15px; }
+  }
+
+  .shop {
+    &_ttl { font-size: 35px; }
+    &_txt { font-size: 20px; }
+    &_inner{
+      &__ttl { font-size: 25px; }
+      &__txt { font-size: 15px; }
+      &__txtz { font-size: 20px; }
+    }
+  }
+
+  .prf {
+    &_ttl { font-size: 35px; }
+    &_inner {
+      &__name {font-size: 25px; }
+      &__txt { font-size: 15px; }
+    }
+  }
+
+  .logo {
+    &__img { width: 7%; }
+    &__ttl { font-size: 10px; }
+    &__ttl2 { font-size: 10px; }
+  }
+}
+// =======Small Device======= //
+@media screen and (min-width: 650px) and (max-width: 767px) {
+  .hed_inner__nav {
+    display: none;
+  }
+
+  .mobile-menu__btn {
+    text-align: right;
+  }
+
+  .mobile_txt {
+    top: 350px;
+  }
+
+  .mobile_img {
+    top:-200px;
+  }
+
+  .swiper_title {
+    &__first {
+      padding: 22% 0 0 115%;
+      font-size: 30px;
+    }
+    &__second {
+      padding: 40% 0 0 105%;
+      font-size: 30px;
+    }
+    &__third {
+      padding: 22% 0 0 30%;
+      font-size: 30px;
+    }
+    &__fourth {
+      padding: 50% 0 0 20%;
+      font-size: 30px;
+    }
+  }
+
+  .con {
+    &__ttl { font-size: 35px; }
+    &_txt__p { font-size: 15px; }
+  }
+
+  .prd {
+    &_ttl { font-size: 35px; }
+    &_inner__txt2 { font-size: 25px; }
+    &_inner__txt3 { font-size: 15px; }
+  }
+
+  .shop {
+    &_ttl { font-size: 35px; }
+    &_txt { font-size: 20px; }
+    &_inner{
+      &__ttl { font-size: 25px; }
+      &__txt { font-size: 15px; }
+      &__txtz { font-size: 20px; }
+    }
+  }
+
+  .prf {
+    &_ttl { font-size: 35px; }
+    &_inner {
+      &__name {font-size: 25px; }
+      &__txt { font-size: 15px; }
+    }
+  }
+
+  .logo {
+    &__img { width: 7%; }
+    &__ttl { font-size: 10px; }
+    &__ttl2 { font-size: 10px; }
+  }
 }
 
-
-// =======Small Device======= //
-@media screen and (min-width: 650px) and (max-width: 991px) {
+// ==========Medium Device========= //
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .hed_inner__nav {
     display: none;
   }
@@ -537,6 +721,41 @@ body {
       padding: 50% 0 0 20%;
       font-size: 30px;
     }
+  }
+
+  .con {
+    &__ttl { font-size: 35px; }
+    &_txt__p { font-size: 15px; }
+  }
+
+  .prd {
+    &_ttl { font-size: 35px; }
+    &_inner__txt2 { font-size: 25px; }
+    &_inner__txt3 { font-size: 15px; }
+  }
+
+  .shop {
+    &_ttl { font-size: 35px; }
+    &_txt { font-size: 20px; }
+    &_inner{
+      &__ttl { font-size: 25px; }
+      &__txt { font-size: 15px; }
+      &__txtz { font-size: 20px; }
+    }
+  }
+
+  .prf {
+    &_ttl { font-size: 35px; }
+    &_inner {
+      &__name {font-size: 25px; }
+      &__txt { font-size: 15px; }
+    }
+  }
+
+  .logo {
+    &__img { width: 7%; }
+    &__ttl { font-size: 10px; }
+    &__ttl2 { font-size: 10px; }
   }
 }
 // ==========Medium Device========= //
