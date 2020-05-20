@@ -59,7 +59,7 @@
 
 .main-title {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .mobile-menu__btn {
@@ -291,7 +291,6 @@ body {
 ======================================*/
 .swiper-container {
   width: 100%;
-  height: 700px;
 }
 
 .swiper_title {
@@ -355,10 +354,11 @@ body {
 }
 
 .hed_img {
-  width: 100%;
-  height: 100%;
   max-width: 100%;
   max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 /*===============================
@@ -458,7 +458,7 @@ body {
 ===========================*/
 .shop {
   text-align: center;
-  padding: 100px 0;
+  padding-top: 50px;
 }
 
 .shop_ttl {
@@ -467,18 +467,19 @@ body {
 
 .shop_txt {
   margin-top: 10px;
-}
-
-.shop_img {
-  text-align: center;
-  padding: 200px;
-  background-image: url(kaki/kaki5.jpg);
-  background-position: center;
-  background-size: cover;
+  padding-bottom: 50px;
 }
 
 .shop_inner {
   background-color: rgba(255, 255, 255, 0.7);
+  top: -500px;
+}
+
+.shop_inner__img {
+  text-align: center;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .shop_inner__ttl {
@@ -508,12 +509,12 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: black;
+  color: #DE6A1C;
   text-decoration: none !important;
 }
 
 .shop_inner__float:hover {
-  background-color: black;
+  background-color: #DE6A1C;
   color: white;
   -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
@@ -588,6 +589,11 @@ body {
   .mobile_img {
     top: -200px;
   }
+  .shop_inner {
+    position: initial;
+    background-color: #f5f4f0;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 760px) and (max-width: 991px) {
@@ -596,6 +602,12 @@ body {
   }
   .mobile-menu__btn {
     text-align: right;
+  }
+  .shop_inner {
+    position: initial;
+    padding: 10px 0;
+    background-color: #f5f4f0;
+    margin-bottom: 50px;
   }
 }
 

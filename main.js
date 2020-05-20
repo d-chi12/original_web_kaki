@@ -68,6 +68,13 @@ class HeroSlider {
         this.swiper.autoplay.stop();
     }
 }
+
+$(document).ready(function () {
+    hsize = $(window).height();
+    $(".hed_img").outerHeight("height", hsize + "100%");
+});
+    
+
 //=========== end of top ===========//
 
 // ===============Scroll trigger==============//
