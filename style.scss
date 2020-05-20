@@ -13,6 +13,16 @@ Colors:
 
 -----------------------------//
 
+
+/*===============================
+                Vars
+===============================*/
+    $cBlack: black;
+    $cWhite: white;
+    $cMenuClose: $cBlack;
+    $cMenuOpen: $cBlack;
+
+
 /*===============================
             Html, body
 ===============================*/
@@ -21,8 +31,9 @@ Colors:
 
 h1,
 h2,
-h3 {
-  color: white;
+h3,
+span {
+  color: $cBlack;
   font-family: 'Noto Serif JP', serif;
   margin: 0;
   padding: 0;
@@ -63,21 +74,12 @@ body {
   padding: 0;
 }
 
-/*===============================
-            Vars
-===============================*/
-$cBlack: black;
-$cWhite: white;
-$cMenuClose: $cBlack;
-$cMenuOpen: $cBlack;
 
 /*===============================
             header
 ===============================*/
 .hed {
   position: fixed;
-  // top: 0;
-  // left: 0;
   width: 100%;
   height: 10%;
   background-color: transparent;
@@ -140,6 +142,7 @@ $cMenuOpen: $cBlack;
     position: absolute;
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
+    color: $cWhite;;
     
     &__first {
       // top: 20%;
@@ -247,16 +250,17 @@ $cMenuOpen: $cBlack;
     text-align: center;
     padding: 100px 0;
 
-    &__img {
+    &__img2 {
       width: 100%;
+      padding: 20px; 
     }
 
-    &__ttl {
+    &__txt2 {
       font-size: 20px;
       padding: 30px;
     }
 
-    &__txt {
+    &__txt3 {
       font-size: 15px;
       margin-bottom: 10px;
     }
@@ -392,7 +396,29 @@ $cMenuOpen: $cBlack;
 /*=========================
       media queries 
 ==========================*/
-@media screen and (min-width: 350px) {
+
+// ======iPhone===== //
+@media screen and (min-width: 320px) and (max-width: 759px) {
+  .hed_inner__nav {
+    display: none;
+  }
+
+  .mobile-menu__btn {
+    text-align: right;
+  }
+
+  .mobile_txt {
+    top: 350px;
+  }
+
+  .mobile_img {
+    top:-200px;
+  }
+}
+
+// =======Small Device======= //
+
+@media screen and (min-width: 760px) and (max-width: 991px) {
   .hed_inner__nav {
     display: none;
   }
@@ -402,15 +428,9 @@ $cMenuOpen: $cBlack;
   }
 }
 
-@media screen and (min-width: 470px) {
 
-}
-
-@media screen and (min-width: 700px) {
-  
-}
-
-@media screen and (min-width: 950px) {
+// ==========Medium Device========= //
+@media screen and (min-width: 992px) and (max-width: 1119px) {
   .hed_inner__nav {
     display: block;
   }
@@ -419,6 +439,12 @@ $cMenuOpen: $cBlack;
   }
 }
 
+// ==========Large Devices========== //
 @media screen and (min-width: 1200px) {
-  
+  .hed_inner__nav {
+    display: block;
+  }
+  .mobile-menu__btn {
+    display: none;
+  }
 }

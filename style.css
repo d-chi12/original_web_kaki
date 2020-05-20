@@ -170,13 +170,18 @@ Colors:
 
 -----------------------------//
 
+
+/*===============================
+                Vars
+===============================*/
 /*===============================
             Html, body
 ===============================*/
 h1,
 h2,
-h3 {
-  color: white;
+h3,
+span {
+  color: black;
   font-family: 'Noto Serif JP', serif;
   margin: 0;
   padding: 0;
@@ -209,9 +214,6 @@ body {
   padding: 0;
 }
 
-/*===============================
-            Vars
-===============================*/
 /*===============================
             header
 ===============================*/
@@ -297,6 +299,7 @@ body {
   -webkit-writing-mode: vertical-rl;
           writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
+  color: white;
 }
 
 .swiper_title__first {
@@ -415,16 +418,17 @@ body {
   padding: 100px 0;
 }
 
-.prd_inner__img {
+.prd_inner__img2 {
   width: 100%;
+  padding: 20px;
 }
 
-.prd_inner__ttl {
+.prd_inner__txt2 {
   font-size: 20px;
   padding: 30px;
 }
 
-.prd_inner__txt {
+.prd_inner__txt3 {
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -571,7 +575,22 @@ body {
 /*=========================
       media queries 
 ==========================*/
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 320px) and (max-width: 759px) {
+  .hed_inner__nav {
+    display: none;
+  }
+  .mobile-menu__btn {
+    text-align: right;
+  }
+  .mobile_txt {
+    top: 350px;
+  }
+  .mobile_img {
+    top: -200px;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 991px) {
   .hed_inner__nav {
     display: none;
   }
@@ -580,7 +599,16 @@ body {
   }
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 992px) and (max-width: 1119px) {
+  .hed_inner__nav {
+    display: block;
+  }
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hed_inner__nav {
     display: block;
   }
