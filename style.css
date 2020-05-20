@@ -302,21 +302,19 @@ body {
 }
 
 .swiper_title__first {
-  padding: 20% 0 10% 130%;
+  padding: 22% 0 0 120%;
 }
 
 .swiper_title__second {
-  padding: 35% 0 10% 120%;
+  padding: 40% 0 0 110%;
 }
 
 .swiper_title__third {
-  top: 30%;
-  left: 20%;
+  padding: 22% 0 0 32%;
 }
 
 .swiper_title__fourth {
-  top: 55%;
-  left: 15%;
+  padding: 50% 0 0 22%;
 }
 
 .swiper__footer {
@@ -578,7 +576,7 @@ body {
 /*=========================
       media queries 
 ==========================*/
-@media screen and (min-width: 320px) and (max-width: 759px) {
+@media screen and (min-width: 320px) and (max-width: 369px) {
   .hed_inner__nav {
     display: none;
   }
@@ -591,18 +589,106 @@ body {
   .mobile_img {
     top: -200px;
   }
+  .swiper_title__first {
+    padding: 22% 0 0 110%;
+    font-size: 12px;
+  }
+  .swiper_title__second {
+    padding: 40% 0 0 100%;
+    font-size: 12px;
+  }
+  .swiper_title__third {
+    padding: 22% 0 0 25%;
+    font-size: 12px;
+  }
+  .swiper_title__fourth {
+    padding: 50% 0 0 15%;
+    font-size: 12px;
+  }
 }
 
-@media screen and (min-width: 760px) and (max-width: 991px) {
+@media screen and (min-width: 370px) and (max-width: 479px) {
   .hed_inner__nav {
     display: none;
   }
   .mobile-menu__btn {
     text-align: right;
   }
+  .mobile_txt {
+    top: 350px;
+  }
+  .mobile_img {
+    top: -200px;
+  }
+  .swiper_title__first {
+    padding: 22% 0 0 110%;
+    font-size: 15px;
+  }
+  .swiper_title__second {
+    padding: 40% 0 0 100%;
+    font-size: 15px;
+  }
+  .swiper_title__third {
+    padding: 22% 0 0 25%;
+    font-size: 15px;
+  }
+  .swiper_title__fourth {
+    padding: 50% 0 0 15%;
+    font-size: 15px;
+  }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1119px) {
+@media screen and (min-width: 480px) and (max-width: 649px) {
+  .hed_inner__nav {
+    display: none;
+  }
+  .mobile-menu__btn {
+    text-align: right;
+  }
+  .swiper_title__first {
+    padding: 22% 0 0 113%;
+    font-size: 20px;
+  }
+  .swiper_title__second {
+    padding: 40% 0 0 103%;
+    font-size: 20px;
+  }
+  .swiper_title__third {
+    padding: 22% 0 0 28%;
+    font-size: 20px;
+  }
+  .swiper_title__fourth {
+    padding: 50% 0 0 18%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 991px) {
+  .hed_inner__nav {
+    display: none;
+  }
+  .mobile-menu__btn {
+    text-align: right;
+  }
+  .swiper_title__first {
+    padding: 22% 0 0 115%;
+    font-size: 30px;
+  }
+  .swiper_title__second {
+    padding: 40% 0 0 105%;
+    font-size: 30px;
+  }
+  .swiper_title__third {
+    padding: 22% 0 0 30%;
+    font-size: 30px;
+  }
+  .swiper_title__fourth {
+    padding: 50% 0 0 20%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .hed_inner__nav {
     display: block;
   }

@@ -141,23 +141,16 @@ body {
     color: $cWhite;
     
     &__first {
-      // top: 20%;
-      // left: 80%;
-      padding: 20% 0 10% 130%;
+      padding: 22% 0 0 120%;
     }
     &__second {
-      // top: 35%;
-      // left: 75%;
-      padding: 35% 0 10% 120%;
-      
+      padding: 40% 0 0 110%;
     }
     &__third {
-      top: 30%;
-      left: 20%;
+      padding: 22% 0 0 32%;
     }
     &__fourth {
-      top: 55%;
-      left: 15%;
+      padding: 50% 0 0 22%;
     }
   }
 
@@ -402,8 +395,8 @@ body {
       media queries 
 ==========================*/
 
-// ======iPhone===== //
-@media screen and (min-width: 320px) and (max-width: 759px) {
+// ======Small iPhone===== //
+@media screen and (min-width: 320px) and (max-width: 369px) {
   .hed_inner__nav {
     display: none;
   }
@@ -419,11 +412,33 @@ body {
   .mobile_img {
     top:-200px;
   }
+
+  .swiper_title{
+    
+    &__first {
+      padding: 22% 0 0 110%;
+      font-size: 12px;
+    }
+
+    &__second {
+      padding: 40% 0 0 100%;
+      font-size: 12px;
+    }
+
+    &__third {
+      padding: 22% 0 0 25%;
+      font-size: 12px;    
+    }
+
+    &__fourth {
+      padding: 50% 0 0 15%;
+      font-size: 12px;
+    }
+  }
 }
 
-// =======Small Device======= //
-
-@media screen and (min-width: 760px) and (max-width: 991px) {
+// ======Medium iPhone===== //
+@media screen and (min-width: 370px) and (max-width: 479px) {
   .hed_inner__nav {
     display: none;
   }
@@ -431,11 +446,101 @@ body {
   .mobile-menu__btn {
     text-align: right;
   }
+
+  .mobile_txt {
+    top: 350px;
+  }
+
+  .mobile_img {
+    top:-200px;
+  }
+
+  .swiper_title{
+    
+    &__first {
+      padding: 22% 0 0 110%;
+      font-size: 15px;
+    }
+
+    &__second {
+      padding: 40% 0 0 100%;
+      font-size: 15px;
+    }
+
+    &__third {
+      padding: 22% 0 0 25%;
+      font-size: 15px;    
+    }
+
+    &__fourth {
+      padding: 50% 0 0 15%;
+      font-size: 15px;
+    }
+  }
+}
+
+//========Large Devices==========//
+@media screen and (min-width: 480px) and (max-width: 649px) {
+  .hed_inner__nav {
+    display: none;
+  }
+
+  .mobile-menu__btn {
+    text-align: right;
+  }
+
+  .swiper_title {
+    &__first {
+      padding: 22% 0 0 113%;
+      font-size: 20px;
+    }
+    &__second {
+      padding: 40% 0 0 103%;
+      font-size: 20px;
+    }
+    &__third {
+      padding: 22% 0 0 28%;
+      font-size: 20px;
+    }
+    &__fourth {
+      padding: 50% 0 0 18%;
+      font-size: 20px;
+    }
+  }
 }
 
 
+// =======Small Device======= //
+@media screen and (min-width: 650px) and (max-width: 991px) {
+  .hed_inner__nav {
+    display: none;
+  }
+
+  .mobile-menu__btn {
+    text-align: right;
+  }
+
+  .swiper_title {
+    &__first {
+      padding: 22% 0 0 115%;
+      font-size: 30px;
+    }
+    &__second {
+      padding: 40% 0 0 105%;
+      font-size: 30px;
+    }
+    &__third {
+      padding: 22% 0 0 30%;
+      font-size: 30px;
+    }
+    &__fourth {
+      padding: 50% 0 0 20%;
+      font-size: 30px;
+    }
+  }
+}
 // ==========Medium Device========= //
-@media screen and (min-width: 992px) and (max-width: 1119px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .hed_inner__nav {
     display: block;
   }
