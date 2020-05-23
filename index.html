@@ -49,60 +49,61 @@
       <div id="globle-container">
         <!-- header -->
         <div class="mobile-menu__cover"></div>
-        <div class="nav-trigger"></div>
         <header class="hed">
-          <div class="hed_inner">
-            <div class="hed_inner__logo">
-              <img class="hed_inner__img" src="kaki/logo.jpg" alt="" />
-              <span class="hed_inner__ttl">なかで</span>
-              <span class="hed_inner__ttl2">FARM</span>
+          <!-- <nav class="navber"> -->
+            <div class="hed_inner">
+              <div class="hed_inner__logo">
+                <img class="hed_inner__img" src="kaki/logo.jpg" alt="" />
+                <span class="hed_inner__ttl">なかで</span>
+                <span class="hed_inner__ttl2">FARM</span>
+              </div>
+              <nav class="hed_inner__nav">
+                <ul class="hed_inner__ul">
+                  <li class="hed_inner__li"><a href="#">home</a></li>
+                  <li class="hed_inner__li"><a href="#">農の未来</a></li>
+                  <li class="hed_inner__li"><a href="#">3つのこだわり</a></li>
+                  <li class="hed_inner__li"><a href="#">商品紹介</a></li>
+                  <li class="hed_inner__li"><a href="#">自己紹介</a></li>
+                </ul>
+              </nav>
+              <button class="mobile-menu__btn">
+                <span class="mobile-menu_line"></span>
+                <span class="mobile-menu_line"></span>
+                <span class="mobile-menu_line"></span>
+              </button>
             </div>
-            <nav class="hed_inner__nav">
-              <ul class="hed_inner__ul">
-                <li class="hed_inner__li"><a href="#">home</a></li>
-                <li class="hed_inner__li"><a href="#">農の未来</a></li>
-                <li class="hed_inner__li"><a href="#">3つのこだわり</a></li>
-                <li class="hed_inner__li"><a href="#">商品紹介</a></li>
-                <li class="hed_inner__li"><a href="#">自己紹介</a></li>
+            <nav class="mobile-menu">
+              <ul class="mobile-menu__main">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#">
+                    <span class="main-title">home</span>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#">
+                    <span class="main-title">農の未来</span>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#">
+                    <span class="main-title">3つのこだわり</span>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#">
+                    <span class="main-title">商品紹介</span>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="#">
+                    <span class="main-title">自己紹介</span>
+                  </a>
+                </li>
               </ul>
             </nav>
-            <button class="mobile-menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
+          <!-- </end of nav> -->
         </header>
-        <nav class="mobile-menu">
-          <ul class="mobile-menu__main">
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">
-                <span class="main-title">home</span>
-              </a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">
-                <span class="main-title">農の未来</span>
-              </a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">
-                <span class="main-title">3つのこだわり</span>
-              </a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">
-                <span class="main-title">商品紹介</span>
-              </a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">
-                <span class="main-title">自己紹介</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- </header> -->
+        <!-- </end of header> -->
 
         <!-- top -->
         <div class="swiper">
@@ -123,10 +124,10 @@
                 <img class="hed_img" src="kaki/kaki2.jpg" alt="" />
               </div>
             </div>
-            <div class="swiper__footer">
+            <!-- <div class="swiper__footer">
               <img class="swiper__downarrow" src="kaki/arrow.svg" alt="" />
               <span class="swiper__scrolltext">scroll</span>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- End of top -->
@@ -193,7 +194,7 @@
             <div class="prd_inner">
               <div class="row">
                 <div
-                  class="prd_inner__txt mobile_txt col-xl-6 col-md-6 wow animate__animated animate__fadeInLeft"
+                  class="prd_inner__txt prd_mobile__txt col-xl-6 col-md-6 wow animate__animated animate__fadeInLeft"
                 >
                   <p class="prd_inner__txt2">〜収穫〜</p>
                   <p class="prd_inner__txt3">ギリギリまで収穫を待ち、</p>
@@ -201,7 +202,7 @@
                   <p class="prd_inner__txt3">糖度20%を実現！</p>
                 </div>
                 <div
-                  class="prd_inner__img mobile_img col-xl-6 col-md-6 wow animate__animated animate__fadeInLeftBig"
+                  class="prd_inner__img prd_mobile__img col-xl-6 col-md-6 wow animate__animated animate__fadeInLeftBig"
                 >
                   <img class="prd_inner__img2" src="kaki/kaki3.jpg" alt="" />
                 </div>
@@ -232,8 +233,10 @@
         <section id="statement" class="shop sec">
           <div class="container">
             <div class="row">
-              <div class="wow animate__animated animate__fadeIn col-md-12 col-sm-12 col-xl-12">
-                <h6 class="shop_ttl">イチオシ商品</h6>
+              <div
+                class="wow animate__animated animate__fadeIn col-md-12 col-sm-12 col-xl-12"
+              >
+                <h5 class="shop_ttl">イチオシ商品</h5>
                 <p class="shop_txt">送料無料でお届け。</p>
               </div>
             </div>
@@ -263,7 +266,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-sm-12 col-xl-12">
-                <h3 class="prf_ttl">生産者</h3>
+                <h4 class="prf_ttl">生産者</h4>
               </div>
               <div class="col-md-6 col-sm-12 col-xl-6 prd_inner">
                 <p class="prf_inner__name">中出大智</p>

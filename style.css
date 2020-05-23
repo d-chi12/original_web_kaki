@@ -161,7 +161,7 @@
 /*------------------------------
 Deafault Theme
 --------------------------------
-Colors: 
+Colors:
     main Color  : #DE6A1C
     Sub Color   : #49B705
     white Somke : #f4f4f4
@@ -180,6 +180,7 @@ Colors:
 h1,
 h2,
 h3,
+h4,
 span {
   color: black;
   font-family: 'Noto Serif JP', serif;
@@ -187,13 +188,16 @@ span {
   padding: 0;
 }
 
-h4,
 h5,
 h6 {
   color: white;
   font-family: 'Noto Serif JP', serif;
   margin: 0;
   padding: 0;
+}
+
+h7 {
+  color: #DE6A1C;
 }
 
 p {
@@ -280,6 +284,7 @@ body {
 .hed_inner__li {
   padding: 0;
   margin: 10px;
+  font-family: 'Sawarabi Mincho', sans-serif;
 }
 
 .hed_inner__li > a {
@@ -327,23 +332,6 @@ body {
   height: 70px;
   width: 20px;
   overflow: hidden;
-}
-
-.swiper__downarrow {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 6px;
-}
-
-.swiper__scrolltext {
-  position: absolute;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  color: rgba(255, 255, 255, 0.7);
-  left: -8px;
-  top: 11px;
-  font-size: 1.2em;
 }
 
 .swiper-slide-active .hed_img {
@@ -573,36 +561,50 @@ body {
   text-align: center;
 }
 
+/*===================================
+              Navigation
+===================================*/
 /*=========================
-      media queries 
+      media queries
 ==========================*/
 @media screen and (min-width: 320px) and (max-width: 369px) {
+  .hed_inner {
+    padding: 30px;
+  }
   .hed_inner__nav {
     display: none;
   }
-  .mobile-menu__btn {
+  .hed_inner__img {
+    width: 9%;
+  }
+  .hed_inner__ttl {
+    display: none;
+    font-size: 10px;
+  }
+  .hed_inner__ttl2 {
+    display: none;
+    font-size: 10px;
+  }
+  .mobile-menu__btn span {
     text-align: right;
-  }
-  .mobile_txt {
-    top: 200px;
-  }
-  .mobile_img {
-    top: -200px;
+    width: 20px;
+    margin-bottom: 5px;
+    position: relative;
   }
   .swiper_title__first {
-    padding: 22% 0 0 110%;
+    padding: 35% 0 0 110%;
     font-size: 12px;
   }
   .swiper_title__second {
-    padding: 40% 0 0 100%;
+    padding: 55% 0 0 100%;
     font-size: 12px;
   }
   .swiper_title__third {
-    padding: 22% 0 0 25%;
+    padding: 32% 0 0 25%;
     font-size: 12px;
   }
   .swiper_title__fourth {
-    padding: 50% 0 0 15%;
+    padding: 55% 0 0 15%;
     font-size: 12px;
   }
   .con__ttl {
@@ -619,6 +621,12 @@ body {
   }
   .prd_inner__txt3 {
     font-size: 10px;
+  }
+  .prd_mobile__txt {
+    top: 200px;
+  }
+  .prd_mobile__img {
+    top: -200px;
   }
   .shop_ttl {
     font-size: 30px;
@@ -656,32 +664,43 @@ body {
 }
 
 @media screen and (min-width: 370px) and (max-width: 479px) {
+  .hed_inner {
+    padding: 40px;
+  }
   .hed_inner__nav {
     display: none;
   }
-  .mobile-menu__btn {
+  .hed_inner__img {
+    width: 9%;
+  }
+  .hed_inner__ttl {
+    display: none;
+    font-size: 10px;
+  }
+  .hed_inner__ttl2 {
+    display: none;
+    font-size: 10px;
+  }
+  .mobile-menu__btn span {
     text-align: right;
-  }
-  .mobile_txt {
-    top: 300px;
-  }
-  .mobile_img {
-    top: -200px;
+    width: 25px;
+    margin-bottom: 5px;
+    position: relative;
   }
   .swiper_title__first {
-    padding: 22% 0 0 110%;
+    padding: 35% 0 0 110%;
     font-size: 15px;
   }
   .swiper_title__second {
-    padding: 40% 0 0 100%;
+    padding: 55% 0 0 100%;
     font-size: 15px;
   }
   .swiper_title__third {
-    padding: 22% 0 0 25%;
+    padding: 32% 0 0 25%;
     font-size: 15px;
   }
   .swiper_title__fourth {
-    padding: 50% 0 0 15%;
+    padding: 55% 0 0 15%;
     font-size: 15px;
   }
   .con__ttl {
@@ -698,6 +717,12 @@ body {
   }
   .prd_inner__txt3 {
     font-size: 12px;
+  }
+  .prd_mobile__txt {
+    top: 300px;
+  }
+  .prd_mobile__img {
+    top: -200px;
   }
   .shop_ttl {
     font-size: 32px;
@@ -735,33 +760,43 @@ body {
 }
 
 @media screen and (min-width: 480px) and (max-width: 649px) {
+  .hed_inner {
+    padding: 50px;
+  }
   .hed_inner__nav {
     display: none;
   }
-  .mobile-menu__btn {
+  .mobile-menu__btn span {
     text-align: right;
-  }
-  .mobile_txt {
-    top: 350px;
-  }
-  .mobile_img {
-    top: -200px;
+    width: 32px;
+    position: relative;
+    left: 25px;
+    top: 12px;
   }
   .swiper_title__first {
-    padding: 22% 0 0 113%;
+    padding: 35% 0 0 113%;
     font-size: 20px;
   }
   .swiper_title__second {
-    padding: 40% 0 0 103%;
+    padding: 55% 0 0 103%;
     font-size: 20px;
   }
   .swiper_title__third {
-    padding: 22% 0 0 28%;
+    padding: 32% 0 0 28%;
     font-size: 20px;
   }
   .swiper_title__fourth {
-    padding: 50% 0 0 18%;
+    padding: 55% 0 0 18%;
     font-size: 20px;
+  }
+  .hed_inner__img {
+    width: 7%;
+  }
+  .hed_inner__ttl {
+    font-size: 10px;
+  }
+  .hed_inner__ttl2 {
+    font-size: 10px;
   }
   .con__ttl {
     font-size: 35px;
@@ -777,6 +812,12 @@ body {
   }
   .prd_inner__txt3 {
     font-size: 15px;
+  }
+  .prd_mobile__txt {
+    top: 350px;
+  }
+  .prd_mobile__img {
+    top: -200px;
   }
   .shop_ttl {
     font-size: 35px;
@@ -820,26 +861,20 @@ body {
   .mobile-menu__btn {
     text-align: right;
   }
-  .mobile_txt {
-    top: 350px;
-  }
-  .mobile_img {
-    top: -200px;
-  }
   .swiper_title__first {
-    padding: 22% 0 0 115%;
+    padding: 35% 0 0 115%;
     font-size: 30px;
   }
   .swiper_title__second {
-    padding: 40% 0 0 105%;
+    padding: 55% 0 0 105%;
     font-size: 30px;
   }
   .swiper_title__third {
-    padding: 22% 0 0 30%;
+    padding: 32% 0 0 30%;
     font-size: 30px;
   }
   .swiper_title__fourth {
-    padding: 50% 0 0 20%;
+    padding: 55% 0 0 20%;
     font-size: 30px;
   }
   .con__ttl {
@@ -856,6 +891,12 @@ body {
   }
   .prd_inner__txt3 {
     font-size: 15px;
+  }
+  .prd_mobile__txt {
+    top: 350px;
+  }
+  .prd_mobile__img {
+    top: -200px;
   }
   .shop_ttl {
     font-size: 35px;
@@ -900,19 +941,19 @@ body {
     text-align: right;
   }
   .swiper_title__first {
-    padding: 22% 0 0 115%;
+    padding: 32% 0 0 115%;
     font-size: 30px;
   }
   .swiper_title__second {
-    padding: 40% 0 0 105%;
+    padding: 55% 0 0 105%;
     font-size: 30px;
   }
   .swiper_title__third {
-    padding: 22% 0 0 30%;
+    padding: 32% 0 0 30%;
     font-size: 30px;
   }
   .swiper_title__fourth {
-    padding: 50% 0 0 20%;
+    padding: 55% 0 0 20%;
     font-size: 30px;
   }
   .con__ttl {

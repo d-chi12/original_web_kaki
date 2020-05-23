@@ -26,8 +26,7 @@ class MobileMenu {
 
 new MobileMenu();
 
-
-
+//============= end of header ============//
 
 //============= top ===============//
 document.addEventListener('DOMContentLoaded', function(){
@@ -76,17 +75,3 @@ $(document).ready(function () {
     
 
 //=========== end of top ===========//
-
-// ===============Scroll trigger==============//
-
-const header = document.querySelector('.hed');
-const _navAnimation = function(el, inview) {
-    if(inview) {
-        header.classList.remove('triggered');
-    } else {
-        header.classList.add('triggered');
-    }
-}
-const so3 = new ScrollObserver('.nav-trigger', _navAnimation, {once: false});
-
-// =========== end-of-header ==============//

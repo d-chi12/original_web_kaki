@@ -4,7 +4,7 @@
 /*------------------------------
 Deafault Theme
 --------------------------------
-Colors: 
+Colors:
     main Color  : #DE6A1C
     Sub Color   : #49B705
     white Somke : #f4f4f4
@@ -32,6 +32,7 @@ Colors:
 h1,
 h2,
 h3,
+h4,
 span {
   color: $cBlack;
   font-family: 'Noto Serif JP', serif;
@@ -39,7 +40,6 @@ span {
   padding: 0;
 }
 
-h4,
 h5,
 h6 {
   color: $cWhite;
@@ -47,6 +47,8 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+h7 { color: #DE6A1C; }
 
 p {
   color: #000;
@@ -60,7 +62,6 @@ p {
 // font-family: 'Sawarabi Gothic', sans-serif;
 // font-family: 'Sawarabi Mincho', sans-serif;
 
-
 .sec {
   width: 100%;
   height: 100%;
@@ -70,7 +71,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 /*===============================
             header
@@ -89,7 +89,7 @@ body {
     background-color: rgba(38,50,70,0.9);
     box-shadow: 10px 0 25px -10px rgba(0,0,0,0.5);
   }
-  
+
   &_inner {
     display: flex;
     justify-content: space-between;
@@ -97,10 +97,10 @@ body {
     width: 100%;
     padding: 0 100px;
 
-    &__img { width: 5%; } 
+    &__img { width: 5%; }
 
     &__ttl { color:$cBlack; }
-    
+
     &__ttl2 {
       font-size: 20px;
       color: #DE6A1C;
@@ -118,13 +118,15 @@ body {
     &__li {
       padding: 0;
       margin: 10px;
-      
+      font-family: 'Sawarabi Mincho', sans-serif;
+
       & > a {
         color: $cBlack;
       }
     }
   }
 }
+
 /*====================================
                 top
 ======================================*/
@@ -139,7 +141,7 @@ body {
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     color: $cWhite;
-    
+
     &__first {
       padding: 22% 0 0 120%;
     }
@@ -165,27 +167,25 @@ body {
     overflow: hidden;
   }
 
-  &__downarrow {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 6px;
-  }
+  // &__downarrow {
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   width: 6px;
+  // }
 
-  &__scrolltext {
-    position: absolute;
-    transform: rotate(90deg);
-    color: rgba(255, 255, 255, 0.7);
-    left: -8px;
-    top: 11px;
-    font-size: 1.2em;
-  }
+  // &__scrolltext {
+  //   position: absolute;
+  //   transform: rotate(90deg);
+  //   color: rgba(255, 255, 255, 0.7);
+  //   left: -8px;
+  //   top: 11px;
+  //   font-size: 1.2em;
+  // }
 }
 
 .swiper-slide-active {
-  & .hed_img {
-    transform: none;
-  }
+  & .hed_img { transform: none; }
 }
 
 .hed_img {
@@ -223,12 +223,13 @@ body {
   &__p {margin-bottom: 10px;}
   &__pz {margin-top: 30px;}
 }
+
 /*===============================
             PRODUCT
 ===============================*/
 .prd {
   background-color: #f4f4f4;
-  
+
   &_ttl {
     font-size: 50px;
     text-align: center;
@@ -241,7 +242,7 @@ body {
 
     &__img2 {
       width: 100%;
-      padding: 20px; 
+      padding: 20px;
     }
 
     &__txt2 {
@@ -271,6 +272,7 @@ body {
 .animate__animated.animate__fadeInleft {
   --animate-duration: 2s;
 }
+
 /*=========================
       shopping
 ===========================*/
@@ -330,6 +332,7 @@ body {
     }
   }
 }
+
 #statement {
   background-image: url("kaki/kaki5.jpg");
   background-size: cover;
@@ -339,6 +342,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
 }
+
 /*=======================
         Profile
 =========================*/
@@ -358,80 +362,86 @@ body {
       font-size: 30px;
       padding-bottom: 30px;
     }
-  
+
     &__txt {
       font-size: 20px;
       margin-bottom: 5px;
     }
-    
+
     &__img {
       width: 100%;
     }
   }
 }
+
 /*=====================
         FOOTER
 =======================*/
 .logo {
   padding-top: 50px;
   font-size: 40px;
-  // display: flex;
   text-align: center;
 
-  &__img {
-    width: 5%;
-  } 
-  
-  &__ttl2 {
-    color: #DE6A1C;
-  }
+  &__img { width: 5%; }
+
+  &__ttl2 { color: #DE6A1C; }
 }
 
 .footer__sns {
   padding-top: 20px;
   text-align: center;
 }
+
+/*===================================
+              Navigation
+===================================*/
+
+
 /*=========================
-      media queries 
+      media queries
 ==========================*/
 
-// ======Small iPhone===== //
+//-------Small Phone-------//
 @media screen and (min-width: 320px) and (max-width: 369px) {
-  .hed_inner__nav {
+  .hed_inner {
+    padding: 30px;
+    &__nav { display: none; }
+    &__img { width: 9%; }
+    &__ttl {
+      display: none;
+      font-size: 10px;
+    }
+    &__ttl2 { 
     display: none;
+    font-size: 10px;
+    }
   }
 
-  .mobile-menu__btn {
-    text-align: right;
-  }
-
-  .mobile_txt {
-    top: 200px;
-  }
-
-  .mobile_img {
-    top:-200px;
+  .mobile-menu__btn span{ 
+    text-align: right; 
+    width: 20px;
+    margin-bottom: 5px;
+    position: relative;
   }
 
   .swiper_title{
-    
     &__first {
-      padding: 22% 0 0 110%;
+      padding: 35% 0 0 110%;
       font-size: 12px;
     }
 
     &__second {
-      padding: 40% 0 0 100%;
+      padding: 55% 0 0 100%;
       font-size: 12px;
     }
 
     &__third {
-      padding: 22% 0 0 25%;
-      font-size: 12px;    
+      padding: 32% 0 0 25%;
+      font-size: 12px;
     }
 
     &__fourth {
-      padding: 50% 0 0 15%;
+      padding: 55% 0 0 15%;
       font-size: 12px;
     }
   }
@@ -445,6 +455,8 @@ body {
     &_ttl { font-size: 30px; }
     &_inner__txt2 { font-size: 20px; }
     &_inner__txt3 { font-size: 10px; }
+    &_mobile__txt { top: 200px; }
+    &_mobile__img { top:-200px; }
   }
 
   .shop {
@@ -472,43 +484,47 @@ body {
   }
 }
 
-// ======Medium iPhone===== //
+//-------Medium Phone------ //
 @media screen and (min-width: 370px) and (max-width: 479px) {
-  .hed_inner__nav {
+  .hed_inner {
+    padding: 40px;
+    &__nav { display: none; }
+    &__img { width: 9%; }
+    &__ttl {
+      display: none;
+      font-size: 10px;
+    }
+    &__ttl2 { 
     display: none;
+    font-size: 10px;
+    }
   }
 
-  .mobile-menu__btn {
+  .mobile-menu__btn span{
     text-align: right;
-  }
-
-  .mobile_txt {
-    top: 300px;
-  }
-
-  .mobile_img {
-    top:-200px;
+    width: 25px;
+    margin-bottom: 5px;
+    position: relative;
   }
 
   .swiper_title{
-    
     &__first {
-      padding: 22% 0 0 110%;
+      padding: 35% 0 0 110%;
       font-size: 15px;
     }
 
     &__second {
-      padding: 40% 0 0 100%;
+      padding: 55% 0 0 100%;
       font-size: 15px;
     }
 
     &__third {
-      padding: 22% 0 0 25%;
-      font-size: 15px;    
+      padding: 32% 0 0 25%;
+      font-size: 15px;
     }
 
     &__fourth {
-      padding: 50% 0 0 15%;
+      padding: 55% 0 0 15%;
       font-size: 15px;
     }
   }
@@ -522,6 +538,8 @@ body {
     &_ttl { font-size: 32px; }
     &_inner__txt2 { font-size: 22px; }
     &_inner__txt3 { font-size: 12px; }
+    &_mobile__txt { top: 300px; }
+    &_mobile__img { top:-200px; }
   }
 
   .shop {
@@ -549,41 +567,44 @@ body {
   }
 }
 
-//========Large iphone=========//
+//---------Large phone-------//
 @media screen and (min-width: 480px) and (max-width: 649px) {
-  .hed_inner__nav {
-    display: none;
+  .hed_inner{
+    padding: 50px;
+    &__nav { display: none; }
   }
 
-  .mobile-menu__btn {
+  .mobile-menu__btn span{
     text-align: right;
-  }
-
-  .mobile_txt {
-    top: 350px;
-  }
-
-  .mobile_img {
-    top:-200px;
+    width: 32px;
+    position: relative;
+    left: 25px;
+    top: 12px;
   }
 
   .swiper_title {
     &__first {
-      padding: 22% 0 0 113%;
+      padding: 35% 0 0 113%;
       font-size: 20px;
     }
     &__second {
-      padding: 40% 0 0 103%;
+      padding: 55% 0 0 103%;
       font-size: 20px;
     }
     &__third {
-      padding: 22% 0 0 28%;
+      padding: 32% 0 0 28%;
       font-size: 20px;
     }
     &__fourth {
-      padding: 50% 0 0 18%;
+      padding: 55% 0 0 18%;
       font-size: 20px;
     }
+  }
+
+  .hed_inner {
+    &__img { width: 7%; }
+    &__ttl { font-size: 10px; }
+    &__ttl2 { font-size: 10px; }
   }
 
   .con {
@@ -595,6 +616,9 @@ body {
     &_ttl { font-size: 35px; }
     &_inner__txt2 { font-size: 25px; }
     &_inner__txt3 { font-size: 15px; }
+    &_mobile__txt { top: 350px; }
+    &_mobile__img { top:-200px; }
+
   }
 
   .shop {
@@ -621,39 +645,28 @@ body {
     &__ttl2 { font-size: 10px; }
   }
 }
-// =======Small Device======= //
+
+//----------Small Device----------//
 @media screen and (min-width: 650px) and (max-width: 767px) {
-  .hed_inner__nav {
-    display: none;
-  }
+  .hed_inner__nav { display: none; }
 
-  .mobile-menu__btn {
-    text-align: right;
-  }
-
-  .mobile_txt {
-    top: 350px;
-  }
-
-  .mobile_img {
-    top:-200px;
-  }
+  .mobile-menu__btn { text-align: right; }
 
   .swiper_title {
     &__first {
-      padding: 22% 0 0 115%;
+      padding: 35% 0 0 115%;
       font-size: 30px;
     }
     &__second {
-      padding: 40% 0 0 105%;
+      padding: 55% 0 0 105%;
       font-size: 30px;
     }
     &__third {
-      padding: 22% 0 0 30%;
+      padding: 32% 0 0 30%;
       font-size: 30px;
     }
     &__fourth {
-      padding: 50% 0 0 20%;
+      padding: 55% 0 0 20%;
       font-size: 30px;
     }
   }
@@ -667,6 +680,8 @@ body {
     &_ttl { font-size: 35px; }
     &_inner__txt2 { font-size: 25px; }
     &_inner__txt3 { font-size: 15px; }
+    &_mobile__txt { top: 350px; }
+    &_mobile__img { top:-200px; }
   }
 
   .shop {
@@ -694,31 +709,27 @@ body {
   }
 }
 
-// ==========Medium Device========= //
+//-------Medium Device--------//
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .hed_inner__nav {
-    display: none;
-  }
+  .hed_inner__nav { display: none; }
 
-  .mobile-menu__btn {
-    text-align: right;
-  }
+  .mobile-menu__btn { text-align: right; }
 
   .swiper_title {
     &__first {
-      padding: 22% 0 0 115%;
+      padding: 32% 0 0 115%;
       font-size: 30px;
     }
     &__second {
-      padding: 40% 0 0 105%;
+      padding: 55% 0 0 105%;
       font-size: 30px;
     }
     &__third {
-      padding: 22% 0 0 30%;
+      padding: 32% 0 0 30%;
       font-size: 30px;
     }
     &__fourth {
-      padding: 50% 0 0 20%;
+      padding: 55% 0 0 20%;
       font-size: 30px;
     }
   }
@@ -758,22 +769,17 @@ body {
     &__ttl2 { font-size: 10px; }
   }
 }
-// ==========Medium Device========= //
+
+//---------Medium Device--------//
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .hed_inner__nav {
-    display: block;
-  }
-  .mobile-menu__btn {
-    display: none;
-  }
+  .hed_inner__nav { display: block; }
+
+  .mobile-menu__btn { display: none; }
 }
 
-// ==========Large Devices========== //
+//---------Large Devices----------//
 @media screen and (min-width: 1200px) {
-  .hed_inner__nav {
-    display: block;
-  }
-  .mobile-menu__btn {
-    display: none;
-  }
+  .hed_inner__nav { display: block; }
+
+  .mobile-menu__btn { display: none; }
 }
